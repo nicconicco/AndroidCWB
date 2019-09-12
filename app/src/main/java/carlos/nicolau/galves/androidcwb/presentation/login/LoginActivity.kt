@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import carlos.nicolau.galves.androidcwb.R
+import carlos.nicolau.galves.androidcwb.framework.database.DatabaseDataSource
+import carlos.nicolau.galves.core.data.GetUserRepositoryImpl
 import carlos.nicolau.galves.core.interators.GetUserUseCase
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -28,7 +30,14 @@ class LoginActivity : AppCompatActivity(), LoginPresenter.View {
 
     private fun setupView() {
 
-        loginPresenterImpl = LoginPresenterImpl(GetUserUseCase())
+        loginPresenterImpl = LoginPresenterImpl(
+            GetUserUseCase(
+                GetUserRepositoryImpl(
+                    DatabaseDataSource()
+                )
+            )
+        )
+
         loginPresenterImpl.attach(this)
 
         login.setOnClickListener {

@@ -1,12 +1,14 @@
-package carlos.nicolau.galves.androidcwb.feature
+package carlos.nicolau.galves.androidcwb.feature.login
 
 import carlos.nicolau.galves.androidcwb.presentation.login.LoginPresenter
 import carlos.nicolau.galves.androidcwb.presentation.login.LoginPresenterImpl
 import carlos.nicolau.galves.core.domain.User
 import carlos.nicolau.galves.core.interators.IGetUserUseCase
+import org.junit.After
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mockito
+import org.mockito.Mockito.atLeast
 import org.mockito.MockitoAnnotations
 
 class LoginPresenterImplTest {
@@ -29,8 +31,13 @@ class LoginPresenterImplTest {
         Mockito.`when`(getUserUseCase.execute("","")).thenReturn(user)
         presenter.onClickBtnLogin("","")
 
-        Mockito.verify(mView).showLoading()
+        Mockito.verify(mView, atLeast(1)).showLoading()
         Mockito.verify(getUserUseCase).execute("","")
-        Mockito.verify(mView).hideLoading()
+        Mockito.verify(mView, atLeast(1)).hideLoading()
+    }
+
+    @After
+    fun after() {
+        presenter.detach()
     }
 }
