@@ -1,15 +1,29 @@
 package carlos.nicolau.galves.androidcwb.presentation.login
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import carlos.nicolau.galves.androidcwb.R
-import carlos.nicolau.galves.androidcwb.framework.database.DatabaseDataSource
+import carlos.nicolau.galves.androidcwb.framework.database.GetUserDataSource
+import carlos.nicolau.galves.androidcwb.framework.di_native.AndroidCWBMvpFactory
+import carlos.nicolau.galves.androidcwb.presentation.home.HomeActivity
 import carlos.nicolau.galves.core.data.GetUserRepositoryImpl
-import carlos.nicolau.galves.core.interators.GetUserUseCase
+import carlos.nicolau.galves.core.interators.GetUserUseCaseImpl
 import kotlinx.android.synthetic.main.activity_login.*
 
-class LoginActivity : AppCompatActivity(), LoginPresenter.View {
+class LoginActivity : AppCompatActivity(), ILoginPresenter.View {
+
+    //region ILoginPresenter.View
+    override fun errorLogin() {
+        Toast.makeText(this, "Login Fail", Toast.LENGTH_LONG).show()
+    }
+
+    override fun goToHome() {
+        startActivity(Intent(this, HomeActivity::class.java))
+        finish()
+    }
 
     override fun showLoading() {
         loading.visibility = View.VISIBLE
@@ -18,6 +32,7 @@ class LoginActivity : AppCompatActivity(), LoginPresenter.View {
     override fun hideLoading() {
         loading.visibility = View.INVISIBLE
     }
+    //endregion
 
     private lateinit var loginPresenterImpl: LoginPresenterImpl
 
@@ -31,11 +46,7 @@ class LoginActivity : AppCompatActivity(), LoginPresenter.View {
     private fun setupView() {
 
         loginPresenterImpl = LoginPresenterImpl(
-            GetUserUseCase(
-                GetUserRepositoryImpl(
-                    DatabaseDataSource()
-                )
-            )
+            AndroidCWBMvpFactory.dependencies.getUser
         )
 
         loginPresenterImpl.attach(this)
