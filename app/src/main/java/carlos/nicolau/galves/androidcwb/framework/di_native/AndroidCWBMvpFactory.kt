@@ -20,7 +20,7 @@ object AndroidCWBMvpFactory {
                     dependencies
                 )
         } else {
-            throw IllegalStateException("ViewModel must extend AndroidCWBMvp")
+            throw IllegalStateException("MVP must extend AndroidCWBMvp")
         }
     }
 }
