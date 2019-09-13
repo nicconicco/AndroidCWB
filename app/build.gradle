@@ -34,12 +34,13 @@ dependencies {
     implementation project(':utils-mvp')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    implementation 'androidx.core:core-ktx:1.0.2'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
 
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'com.google.android.material:material:1.0.0'
     testImplementation 'junit:junit:4.12'
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.0")
 
     //Espresso
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
@@ -58,4 +59,8 @@ dependencies {
     implementation 'org.koin:koin-android:2.0.1'
     implementation 'org.koin:koin-core:2.0.1'
 
+    //Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.2.1"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.2.1"
 }
+

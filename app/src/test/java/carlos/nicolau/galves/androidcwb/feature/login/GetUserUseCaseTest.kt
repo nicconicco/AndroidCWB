@@ -17,7 +17,7 @@ class GetUserUseCaseTest {
         val user = User()
 
         Mockito.`when`(getUserRepositoryImpl.execute("","")).thenReturn(user)
-        getUserUseCase.execute("","")
+        getUserUseCase.execute("", "")
 
         Mockito.verify(getUserRepositoryImpl, Mockito.atLeast(1)).execute("","")
         Mockito.verify(getUserRepositoryImpl).execute("","")
