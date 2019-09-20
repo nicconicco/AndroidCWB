@@ -6,15 +6,9 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import carlos.nicolau.galves.androidcwb.R
-import carlos.nicolau.galves.androidcwb.framework.database.GetUserDataSource
 import carlos.nicolau.galves.androidcwb.framework.di_native.AndroidCWBMvpFactory
 import carlos.nicolau.galves.androidcwb.presentation.home.HomeActivity
-import carlos.nicolau.galves.core.data.GetUserRepositoryImpl
-import carlos.nicolau.galves.core.interators.GetUserUseCaseImpl
 import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlin.coroutines.CoroutineContext
 
 class LoginActivity : AppCompatActivity(), ILoginPresenter.View {
 

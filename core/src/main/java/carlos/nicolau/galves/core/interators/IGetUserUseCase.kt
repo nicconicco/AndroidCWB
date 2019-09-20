@@ -6,5 +6,5 @@ interface IGetUserUseCase {
     fun execute(
         username: String,
         password: String
-    ) : User
+    ) : User?
 }
