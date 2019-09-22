@@ -44,31 +44,35 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.0")
 
+    //Android lifecycle
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0'
+    implementation 'com.google.android.material:material:1.0.0'
+
     //Espresso
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test:rules:1.2.0'
 
-    //Mockito e Koin Test
-    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0"
-    testImplementation 'org.koin:koin-test:2.0.1'
-
     //Mockito
     testImplementation 'org.mockito:mockito-core:2.28.2'
     androidTestImplementation 'org.mockito:mockito-android:2.28.2'
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0"
 
     //Koin
     implementation 'org.koin:koin-android:2.0.1'
     implementation 'org.koin:koin-core:2.0.1'
+    implementation 'org.koin:koin-android-viewmodel:2.0.1'
+    testCompile 'org.koin:koin-test:2.0.1'
 
     //Coroutines
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.2.1"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.2.1"
 
-    // Room components
+    //Room components
     implementation "androidx.room:room-runtime:2.1.0"
     kapt "androidx.room:room-compiler:2.1.0"
     androidTestImplementation "androidx.room:room-testing:2.1.0"
-
 }
 

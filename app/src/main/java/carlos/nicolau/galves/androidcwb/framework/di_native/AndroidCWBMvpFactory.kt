@@ -1,48 +1,54 @@
 package carlos.nicolau.galves.androidcwb.framework.di_native
 
-import carlos.nicolau.galves.androidcwb.framework.provider.Interactors
+import android.app.Application
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import carlos.nicolau.galves.androidcwb.framework.Interactors
 import carlos.nicolau.galves.androidcwb.framework.room.AndroidCWBRoom
-import carlos.nicolau.galves.utils.BasePresenter
 import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.MainCoroutineDispatcher
 
-object AndroidCWBMvpFactory {
+object AndroidCWBMvpFactory : ViewModelProvider.Factory {
 
-    lateinit var dependencies: Interactors
-    lateinit var io: CoroutineDispatcher
-    lateinit var ui: CoroutineDispatcher
+    lateinit var application: Application
     lateinit var db: AndroidCWBRoom
+    lateinit var dependencies: Interactors
+    lateinit var mainDispacher : MainCoroutineDispatcher
+    lateinit var ioDispacher : CoroutineDispatcher
 
-    fun inject(db: AndroidCWBRoom, io: CoroutineDispatcher, ui: CoroutineDispatcher, dependencies: Interactors) {
-        this.dependencies = dependencies
-        this.io = io
-        this.ui = ui
+    fun inject(
+        application: Application,
+        db: AndroidCWBRoom,
+        dependencies: Interactors,
+        mainDispacher : MainCoroutineDispatcher,
+        ioDispacher : CoroutineDispatcher
+
+    ) {
+        this.application = application
         this.db = db
+        this.dependencies = dependencies
+        this.mainDispacher = mainDispacher
+        this.ioDispacher = ioDispacher
     }
 
-    fun provideAndroidCWBRoom() : AndroidCWBRoom {
-        return db
+    override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+        if (AndroidCWBMvvm::class.java.isAssignableFrom(modelClass)) {
+            return modelClass.getConstructor(
+                Application::class.java,
+                AndroidCWBRoom::class.java,
+                Interactors::class.java,
+                MainCoroutineDispatcher::class.java,
+                CoroutineDispatcher::class.java
+            )
+                .newInstance(
+                    application,
+                    db,
+                    dependencies,
+                    mainDispacher,
+                    ioDispacher
+                )
+        } else {
+            throw IllegalStateException("AndroidCWBMvvm must extend MvvmcViewModel")
+        }
     }
-
-    fun provideIO() : CoroutineDispatcher {
-        return io
-    }
-
-    fun provideUI() : CoroutineDispatcher {
-        return ui
-    }
-
-//    fun <T : BasePresenter<T>?> create(modelClass: Class<T>): T {
-//        if (AndroidCWBMvp::class.java.isAssignableFrom(modelClass)) {
-//            return modelClass.getConstructor(
-//                Interactors::class.java
-//            )
-//                .newInstance(
-//                    dependencies,
-//                    io,
-//                    ui
-//                )
-//        } else {
-//            throw IllegalStateException("MVP must extend AndroidCWBMvp")
-//        }
-//    }
 }

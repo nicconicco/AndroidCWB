@@ -2,50 +2,47 @@ package carlos.nicolau.galves.androidcwb.framework
 
 import android.app.Application
 import carlos.nicolau.galves.androidcwb.framework.data_source.GetUserDataSource
-import carlos.nicolau.galves.androidcwb.framework.di_native.AndroidCWBMvpFactory
-import carlos.nicolau.galves.androidcwb.framework.provider.AppDispatcherProvider
-import carlos.nicolau.galves.androidcwb.framework.provider.Interactors
+import carlos.nicolau.galves.androidcwb.framework.di_native.appModule
 import carlos.nicolau.galves.androidcwb.framework.room.AndroidCWBRoom
-import carlos.nicolau.galves.androidcwb.framework.room.AndroidCWBRoom.Companion.getDatabase
 import carlos.nicolau.galves.core.data.GetUserRepositoryImpl
 import carlos.nicolau.galves.core.interators.GetUserUseCaseImpl
+import org.koin.android.ext.koin.androidContext
+import org.koin.android.ext.koin.androidLogger
+import org.koin.core.context.startKoin
 
 class AndroidCWBApplication : Application() {
 
-    companion object {
-        var db: AndroidCWBRoom? = null
-    }
-
-    fun getDb(): AndroidCWBRoom {
-        return db!!
-    }
-
     override fun onCreate() {
         super.onCreate()
-        db = getDatabase(this)
-
         injectDependencies()
     }
 
     private fun injectDependencies() {
+        startKoin {
+            androidLogger()
+            androidContext(this@AndroidCWBApplication)
+            modules(appModule)
+        }
 
-        AndroidCWBMvpFactory.inject(
-            getDb(),
-            AppDispatcherProvider().io(),
-            AppDispatcherProvider().ui(),
-            Interactors(
-                getUserUseCaseImpl()
-            )
-        )
+//        AndroidCWBMvpFactory.inject(
+//            this,
+//            AndroidCWBRoom.getDatabase(this),
+//            Interactors(
+//                getUserUseCaseImpl()
+//            ),
+//            AppDispatcherProvider().ui(),
+//            AppDispatcherProvider().io()
+//        )
     }
 
     private fun getUserUseCaseImpl(): GetUserUseCaseImpl {
         return GetUserUseCaseImpl(
             GetUserRepositoryImpl(
                 GetUserDataSource(
-                    getDb()
+                    AndroidCWBRoom.getDatabase(this)
                 )
             )
         )
     }
+
 }

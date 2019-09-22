@@ -16,17 +16,13 @@ class GetUserDataSource(
 
     override fun getUserDB(): User? {
         val users = db.getUserDAO().getAllUser()
-        try {
-            if(users.isNotEmpty()) {
-                return UserEntityMapper.transformToUser(users.first())
-            }
-
-            return UserEntityMapper.transformToUser(
-                insertUserEntityInDbAndReturnUser()
-            )
-        } catch (e: Exception) {
-            throw Exception("Somenthing WRONG happens! hehe")
+        if (users.isNotEmpty()) {
+            return UserEntityMapper.transformToUser(users.first())
         }
+
+        return UserEntityMapper.transformToUser(
+            insertUserEntityInDbAndReturnUser()
+        )
     }
 
     private fun insertUserEntityInDbAndReturnUser(): UserEntity {
