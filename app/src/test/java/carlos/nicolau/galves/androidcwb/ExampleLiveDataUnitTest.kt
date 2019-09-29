@@ -1,4 +1,4 @@
-package carlos.nicolau.galves.androidcwb.feature.login
+package carlos.nicolau.galves.androidcwb
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MutableLiveData
@@ -6,7 +6,7 @@ import junit.framework.Assert.assertEquals
 import org.junit.Rule
 import org.junit.Test
 
-class ExampleUnitTest {
+class ExampleLiveDataUnitTest {
 
     @get:Rule
     val rule = InstantTaskExecutorRule()

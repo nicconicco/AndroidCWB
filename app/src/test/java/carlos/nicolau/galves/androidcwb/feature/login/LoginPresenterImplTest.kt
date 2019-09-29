@@ -15,9 +15,12 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
+import org.hamcrest.MatcherAssert.assertThat
+import org.hamcrest.core.IsInstanceOf
 import org.mockito.Mock
 import org.mockito.Mockito
 import org.mockito.Mockito.mock
+import org.mockito.Mockito.verify
 import org.mockito.MockitoAnnotations
 
 class LoginPresenterImplTest {
@@ -29,7 +32,7 @@ class LoginPresenterImplTest {
     private val dispatcher = Dispatchers.Unconfined
 
     @Mock
-    lateinit var viewState : Observer<LoginViewModel.ViewState>
+    lateinit var observer : Observer<LoginViewModel.ViewState>
 
     @get:Rule
     val rule = InstantTaskExecutorRule()
@@ -39,26 +42,44 @@ class LoginPresenterImplTest {
     @Before
     fun setup() {
         MockitoAnnotations.initMocks(this)
+
+        /** todo: injetar com koin
+         *  startKoin {
+            modules(module {
+                factory<GetnetAutomaticAnticipationAutomaticAnticipationUseCase> { automaticAnticipationUseCase }
+                factory<GetnetAutomaticAnticipationAccreditingFlagsUseCase> { flagUseCase }
+                viewModel { GetnetAutomaticAnticipationInfoViewModel(get(), get()) }
+                })
+            }
+
+        viewModel = get()
+         */
+
         login = LoginViewModelImpl(application, dbRoom, getUserUseCase, dispatcher, dispatcher)
 
-        login.viewState.observeForever(viewState)
+        login.viewState.observeForever(observer)
     }
 
     @Test
-    fun whenClickBtnLogin_shouldReturnUserDidLogin_Sucess() = runBlocking {
-
+    fun `Given LoginViewModel when ClickBtnLogin should Return UserDidLogin and GoToHome Success`() = runBlocking {
+        // Given
         val user = User()
-
         val list: ArrayList<UserEntity> = ArrayList()
         list.add(UserEntity(didLogin = true))
+
+        val expectedStateSuccess = LoginViewModel.ViewState.goToHome::class.java
 
         Mockito.`when`(getUserUseCase.execute("", "")).thenReturn(user)
         Mockito.`when`(dbRoom.getUserDAO()).thenReturn(userDAO)
         Mockito.`when`(userDAO.getAllUser()).thenReturn(list)
 
+        // When
         login.onClickBtnLogin("", "")
 
+        // Then
         assert(login.viewState.value != null)
         assert(login.viewState.value == LoginViewModel.ViewState.goToHome)
+        assertThat(login.viewState.value, IsInstanceOf(expectedStateSuccess))
+        verify(observer).onChanged(LoginViewModel.ViewState.isLoading(true))
     }
 }
