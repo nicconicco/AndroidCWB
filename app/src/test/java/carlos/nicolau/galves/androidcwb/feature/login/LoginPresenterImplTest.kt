@@ -1,37 +1,47 @@
 package carlos.nicolau.galves.androidcwb.feature.login
 
-import android.content.Context
+import androidx.lifecycle.Observer
 import carlos.nicolau.galves.androidcwb.framework.AndroidCWBApplication
 import carlos.nicolau.galves.androidcwb.framework.room.AndroidCWBRoom
 import carlos.nicolau.galves.androidcwb.framework.room.UserDAO
 import carlos.nicolau.galves.androidcwb.framework.room.UserEntity
+import carlos.nicolau.galves.androidcwb.presentation.login.LoginViewModel
 import carlos.nicolau.galves.androidcwb.presentation.login.LoginViewModelImpl
 import carlos.nicolau.galves.core.domain.User
-import carlos.nicolau.galves.core.interators.IGetUserUseCase
+import carlos.nicolau.galves.core.interators.GetUserUseCase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.runBlocking
 import org.junit.Before
+import org.junit.Rule
 import org.junit.Test
+import androidx.arch.core.executor.testing.InstantTaskExecutorRule
+import org.mockito.Mock
 import org.mockito.Mockito
 import org.mockito.Mockito.mock
 import org.mockito.MockitoAnnotations
 
 class LoginPresenterImplTest {
 
-    private val getUserUseCase: IGetUserUseCase = mock(IGetUserUseCase::class.java)
+    private val getUserUseCase: GetUserUseCase = mock(GetUserUseCase::class.java)
     private val userDAO: UserDAO = mock(UserDAO::class.java)
     private val application: AndroidCWBApplication = mock(AndroidCWBApplication::class.java)
-    private val context: Context = mock(Context::class.java)
-    private val dbRoom: AndroidCWBRoom = AndroidCWBRoom.getDatabase(context)
+    private val dbRoom: AndroidCWBRoom = mock(AndroidCWBRoom::class.java)
+    private val dispatcher = Dispatchers.Unconfined
 
-    val dispatcher = Dispatchers.Unconfined
+    @Mock
+    lateinit var viewState : Observer<LoginViewModel.ViewState>
 
-    private val login =
-        LoginViewModelImpl(application, dbRoom, getUserUseCase, dispatcher, dispatcher)
+    @get:Rule
+    val rule = InstantTaskExecutorRule()
+
+    lateinit var login: LoginViewModelImpl
 
     @Before
     fun setup() {
         MockitoAnnotations.initMocks(this)
+        login = LoginViewModelImpl(application, dbRoom, getUserUseCase, dispatcher, dispatcher)
+
+        login.viewState.observeForever(viewState)
     }
 
     @Test
@@ -44,15 +54,11 @@ class LoginPresenterImplTest {
 
         Mockito.`when`(getUserUseCase.execute("", "")).thenReturn(user)
         Mockito.`when`(dbRoom.getUserDAO()).thenReturn(userDAO)
-        Mockito.`when`(dbRoom.getUserDAO().getAllUser()).thenReturn(list)
+        Mockito.`when`(userDAO.getAllUser()).thenReturn(list)
 
-        login.viewState.observeForever {}
         login.onClickBtnLogin("", "")
 
         assert(login.viewState.value != null)
-        assert(login.viewState.value!!.goToHome)
-
-        Mockito.verify(dbRoom, Mockito.atLeast(1)).getUserDAO()
-        Mockito.verifyNoMoreInteractions(dbRoom)
+        assert(login.viewState.value == LoginViewModel.ViewState.goToHome)
     }
 }

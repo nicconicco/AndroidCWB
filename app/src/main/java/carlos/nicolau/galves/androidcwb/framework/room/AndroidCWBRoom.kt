@@ -21,7 +21,7 @@ abstract class AndroidCWBRoom : RoomDatabase() {
                 synchronized(AndroidCWBRoom::class.java) {
                     if (INSTANCE == null) {
                         INSTANCE = Room.databaseBuilder(
-                            context.applicationContext,
+                            context,
                             AndroidCWBRoom::class.java, "database"
                         )
                             .build()

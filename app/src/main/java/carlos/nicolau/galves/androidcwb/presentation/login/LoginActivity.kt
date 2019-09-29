@@ -6,15 +6,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
 import carlos.nicolau.galves.androidcwb.R
-import carlos.nicolau.galves.androidcwb.framework.data_source.GetUserDataSource
-import carlos.nicolau.galves.androidcwb.framework.di_native.AndroidCWBMvpFactory
-import carlos.nicolau.galves.androidcwb.framework.provider.AppDispatcherProvider
-import carlos.nicolau.galves.androidcwb.framework.room.AndroidCWBRoom
 import carlos.nicolau.galves.androidcwb.presentation.home.HomeActivity
-import carlos.nicolau.galves.core.data.GetUserRepositoryImpl
-import carlos.nicolau.galves.core.interators.GetUserUseCaseImpl
 import kotlinx.android.synthetic.main.activity_login.*
 import org.koin.android.viewmodel.ext.android.viewModel
 
@@ -37,7 +30,6 @@ class LoginActivity : AppCompatActivity() {
         loading.visibility = View.INVISIBLE
     }
 
-//    private lateinit var loginViewModel: LoginViewModelImpl
     val loginViewModel: LoginViewModelImpl by viewModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,29 +41,37 @@ class LoginActivity : AppCompatActivity() {
 
     private fun setupView() {
 
-//        loginViewModel = ViewModelProviders.of(this, AndroidCWBMvpFactory)
-//            .get(LoginViewModelImpl::class.java)
-
         login.setOnClickListener {
             loginViewModel.viewState.observe(this, Observer {
-                when (it.isLoading) {
-                    true -> showLoading()
-                    false -> hideLoading()
-                }
+                when (it) {
 
-                when (it.goToHome) {
-                    true -> goToHome()
-                }
+                    is LoginViewModel.ViewState.isLoading -> {
+                        when (it.load) {
+                            true -> {
+                                showLoading()
+                            }
+                            false -> {
+                                hideLoading()
+                            }
+                        }
+                    }
 
-                when (it.errorLogin) {
-                    LoginViewModel.ErroType.ERRO_404 -> {
-                        errorLogin(LoginViewModel.ErroType.ERRO_404.value)
+                    is LoginViewModel.ViewState.goToHome -> {
+                        goToHome()
                     }
-                    LoginViewModel.ErroType.ERRO_265 -> {
-                        errorLogin(LoginViewModel.ErroType.ERRO_265.value)
-                    }
-                    LoginViewModel.ErroType.ERRO_INTERNET -> {
-                        errorLogin(LoginViewModel.ErroType.ERRO_INTERNET.value)
+
+                    is LoginViewModel.ViewState.errorLogin -> {
+                        when {
+                            it.erroType == LoginViewModel.ErroType.ERRO_404 -> {
+                                errorLogin(LoginViewModel.ErroType.ERRO_404.value)
+                            }
+                            it.erroType == LoginViewModel.ErroType.ERRO_265 -> {
+                                errorLogin(LoginViewModel.ErroType.ERRO_265.value)
+                            }
+                            it.erroType == LoginViewModel.ErroType.ERRO_INTERNET -> {
+                                errorLogin(LoginViewModel.ErroType.ERRO_INTERNET.value)
+                            }
+                        }
                     }
                 }
             })

@@ -11,13 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0f236ca-7efa-406f-8459-119551677eb3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_koin_koin_android_scope_2_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_koin_koin_android_viewmodel_2_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/Interactors.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/AndroidCWBMvvm.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/appModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModelImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_testing_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/LoginModuleTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -30,22 +26,28 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_koin_koin_android_scope_2_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_koin_koin_android_scope_2_0_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_koin_koin_android_viewmodel_2_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_koin_koin_android_viewmodel_2_0_1_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/AndroidCWBApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/AndroidCWBApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSource.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/AndroidCWBMvp.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/AndroidCWBMvpFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/AndroidCWBMvpFactory.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/provider/Interactors.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSourceImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/AndroidCWBMvpFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di/AndroidCWBMvpFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/AndroidCWBMvvm.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di/AndroidCWBMvvm.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/appModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di/appModule.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/room/AndroidCWBRoom.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/room/AndroidCWBRoom.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/room/UserEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/room/UserEntity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/ILoginPresenter.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginPresenterImpl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModelImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModelImpl.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserDataSourceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserDataSourceTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserRepositoryImplTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserRepositoryImplTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/LoginPresenterImplTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/LoginPresenterImplTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils-mvp/utils-mvp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/utils-mvp/utils-mvp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/data/GetUserRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/data/GetUserRepositoryImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/data/IGetUserDataSource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/data/GetUserDataSource.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/data/IGetUserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/data/GetUserRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/interators/GetUserUseCaseImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/interators/GetUserUseCaseImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/interators/IGetUserUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/interators/GetUserUseCase.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,13 +76,93 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSource.kt">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/LoginPresenterImplTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+            <state relative-caret-position="261">
+              <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserDataSourceTest.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/LoginModuleTest.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="e#56#601#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserUseCaseTest.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/ExampleUnitTest.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#56#166#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModelImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModel.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModelImpl.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+              <folding>
+                <element signature="e#61#394#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/local.properties">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -92,84 +174,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/AndroidCWBMvvm.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModelImpl.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/LoginPresenterImplTest.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="e#56#729#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-96">
-              <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/room/AndroidCWBRoom.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="e#57#177#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserDataSourceTest.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/room/UserEntity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/room/UserDAO.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -177,14 +181,13 @@
       <list>
         <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
-        <option value="Kotlin File" />
         <option value="Kotlin Enum" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>core</find>
       <find>coroutineContext</find>
       <find>AndroidCWBMvp</find>
       <find>val database = provideAndroidCWBRoom()</find>
@@ -195,6 +198,14 @@
       <find>IGetUserDataSource</find>
       <find>CoroutineScope</find>
       <find>GetUserRepositoryImpl</find>
+      <find>core</find>
+      <find>core:core-testing</find>
+      <find>androidx</find>
+      <find>androidx.arch.</find>
+      <find>testCompile</find>
+      <find>proxy.santanderbr.corp:</find>
+      <find>get</find>
+      <find>rule</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -203,12 +214,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/AndroidCWBMvp.kt" />
-        <option value="$PROJECT_DIR$/core/build.gradle" />
-        <option value="$PROJECT_DIR$/utils-mvp/src/main/java/carlos/nicolau/galves/utils/Response.kt" />
-        <option value="$PROJECT_DIR$/utils-mvp/src/main/java/carlos/nicolau/galves/utils/OnResult.kt" />
-        <option value="$PROJECT_DIR$/utils-mvp/src/main/java/carlos/nicolau/galves/utils/DataResponse.kt" />
-        <option value="$PROJECT_DIR$/utils-mvp/src/main/java/carlos/nicolau/galves/utils/Data.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/data/GetUserRepositoryImpl.kt" />
         <option value="$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/interators/GetUserUseCaseImpl.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserUseCaseTest.kt" />
@@ -235,25 +240,31 @@
         <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/room/UserEntityMapper.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModelmpl.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/ViewState.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModel.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/room/AndroidCWBRoom.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/launch.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/async.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/provider/Interactors.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/AndroidCWBMvpFactory.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/techStoreModule.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/AndroidCWBApplication.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/AndroidCWBMvvm.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/Interactors.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/appModule.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModelImpl.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/room/UserEntity.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserDataSourceTest.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSource.kt" />
-        <option value="$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/LoginPresenterImplTest.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSourceImpl.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di/appModule.kt" />
+        <option value="$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/LoginModuleTest.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/room/AndroidCWBRoom.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/AndroidCWBApplication.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginActivity.kt" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$USER_HOME$/.gradle/gradle.properties" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/ExampleUnitTest.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModelImpl.kt" />
+        <option value="$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/LoginPresenterImplTest.kt" />
       </list>
     </option>
   </component>
@@ -270,24 +281,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="AndroidCWB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidCWB" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidCWB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidCWB" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="core" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -311,63 +304,6 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="androidcwb" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidCWB" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="androidcwb" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="data_source" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidCWB" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="androidcwb" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="di_native" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidCWB" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="androidcwb" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidCWB" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="androidcwb" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidCWB" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="androidcwb" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidCWB" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="androidcwb" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="feature" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidCWB" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="androidcwb" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidCWB" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="androidcwb" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -384,42 +320,6 @@
               <item name="core" type="e9137016:NonAndroidModuleNode" />
               <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidCWB" type="1abcf292:AndroidViewProjectNode" />
-              <item name="core" type="e9137016:NonAndroidModuleNode" />
-              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidCWB" type="1abcf292:AndroidViewProjectNode" />
-              <item name="core" type="e9137016:NonAndroidModuleNode" />
-              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidCWB" type="1abcf292:AndroidViewProjectNode" />
-              <item name="core" type="e9137016:NonAndroidModuleNode" />
-              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="interators" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidCWB" type="1abcf292:AndroidViewProjectNode" />
-              <item name="utils-mvp" type="e9137016:NonAndroidModuleNode" />
-            </path>
-            <path>
-              <item name="AndroidCWB" type="1abcf292:AndroidViewProjectNode" />
-              <item name="utils-mvp" type="e9137016:NonAndroidModuleNode" />
-              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="AndroidCWB" type="1abcf292:AndroidViewProjectNode" />
-              <item name="utils-mvp" type="e9137016:NonAndroidModuleNode" />
-              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AndroidCWB" type="1abcf292:AndroidViewProjectNode" />
@@ -429,10 +329,28 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AndroidCWB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidCWB" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidCWB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidCWB" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="core" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DEBUGGABLE_DEVICE" value="emulator-5554" />
+    <property name="DEBUGGABLE_DEVICE" value="Pixel_2_API_28 [emulator-5554]" />
     <property name="DEBUGGABLE_PROCESS" value="carlos.nicolau.galves.androidcwb" />
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -440,6 +358,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di/modules" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
@@ -476,8 +395,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android JUnit.LoginPresenterImplTest">
-    <configuration name="GetUserDataSourceTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Android JUnit.login in app">
+    <configuration name="ExampleUnitTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
         <pattern>
@@ -486,14 +405,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="carlos.nicolau.galves.androidcwb.feature.login" />
-      <option name="MAIN_CLASS_NAME" value="carlos.nicolau.galves.androidcwb.feature.login.GetUserDataSourceTest" />
+      <option name="MAIN_CLASS_NAME" value="carlos.nicolau.galves.androidcwb.feature.login.ExampleUnitTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetUserDataSourceTest.whenGetUserDataSourceCall_shoulCallDbRoom" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExampleUnitTest.my test" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
         <pattern>
@@ -502,8 +421,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="carlos.nicolau.galves.androidcwb.feature.login" />
-      <option name="MAIN_CLASS_NAME" value="carlos.nicolau.galves.androidcwb.feature.login.GetUserDataSourceTest" />
-      <option name="METHOD_NAME" value="whenGetUserDataSourceCall_shoulCallDbRoom" />
+      <option name="MAIN_CLASS_NAME" value="carlos.nicolau.galves.androidcwb.feature.login.ExampleUnitTest" />
+      <option name="METHOD_NAME" value="my test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -546,6 +465,15 @@
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="login in app" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <option name="TEST_OBJECT" value="directory" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <dir value="$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
@@ -603,70 +531,21 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDAORoomTest" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
-      <module name="app" />
-      <option name="TESTING_TYPE" value="2" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="carlos.nicolau.galves.androidcwb.feature.UserDAORoomTest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="EXTRA_OPTIONS" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
-      <Auto>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Auto>
-      <Hybrid>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Hybrid>
-      <Java />
-      <Native>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Native>
-      <Profilers>
-        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
-      </Profilers>
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Android App.app" />
-      <item itemvalue="Android Instrumented Tests.UserDAORoomTest" />
       <item itemvalue="Android JUnit.LoginPresenterImplTest" />
-      <item itemvalue="Android JUnit.GetUserDataSourceTest" />
-      <item itemvalue="Android JUnit.GetUserDataSourceTest.whenGetUserDataSourceCall_shoulCallDbRoom" />
       <item itemvalue="Android JUnit.LoginPresenterImplTest.whenClickBtnLogin_shouldReturnUserDidLogin_Sucess" />
+      <item itemvalue="Android JUnit.ExampleUnitTest.my test" />
+      <item itemvalue="Android JUnit.ExampleUnitTest" />
+      <item itemvalue="Android JUnit.login in app" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Android JUnit.LoginPresenterImplTest" />
+        <item itemvalue="Android JUnit.login in app" />
         <item itemvalue="Android JUnit.LoginPresenterImplTest.whenClickBtnLogin_shouldReturnUserDidLogin_Sucess" />
-        <item itemvalue="Android JUnit.GetUserDataSourceTest.whenGetUserDataSourceCall_shoulCallDbRoom" />
-        <item itemvalue="Android JUnit.GetUserDataSourceTest" />
-        <item itemvalue="Android Instrumented Tests.UserDAORoomTest" />
+        <item itemvalue="Android JUnit.ExampleUnitTest" />
+        <item itemvalue="Android JUnit.ExampleUnitTest.my test" />
+        <item itemvalue="Android JUnit.LoginPresenterImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -684,35 +563,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserDAORoomTest - 2019.09.19 at 21h 40m 22s.xml">
-      <configuration name="UserDAORoomTest" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="UserDAORoomTest - 2019.09.19 at 21h 43m 50s.xml">
-      <configuration name="UserDAORoomTest" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="UserDAORoomTest - 2019.09.19 at 21h 52m 57s.xml">
-      <configuration name="UserDAORoomTest" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="LoginPresenterImplTest - 2019.09.22 at 11h 46m 50s.xml">
-      <configuration name="LoginPresenterImplTest" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="GetUserDataSourceTest - 2019.09.22 at 11h 47m 15s.xml">
-      <configuration name="GetUserDataSourceTest" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="GetUserDataSourceTest_whenGetUserDataSourceCall_shoulCallDbRoom - 2019.09.22 at 11h 52m 53s.xml">
-      <configuration name="GetUserDataSourceTest.whenGetUserDataSourceCall_shoulCallDbRoom" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="GetUserDataSourceTest_whenGetUserDataSourceCall_shoulCallDbRoom - 2019.09.22 at 11h 54m 41s.xml">
-      <configuration name="GetUserDataSourceTest.whenGetUserDataSourceCall_shoulCallDbRoom" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="GetUserDataSourceTest_whenGetUserDataSourceCall_shoulCallDbRoom - 2019.09.22 at 11h 55m 37s.xml">
-      <configuration name="GetUserDataSourceTest.whenGetUserDataSourceCall_shoulCallDbRoom" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="LoginPresenterImplTest_whenClickBtnLogin_shouldReturnUserDidLogin_Sucess - 2019.09.22 at 11h 56m 53s.xml">
+    <history-entry file="LoginPresenterImplTest_whenClickBtnLogin_shouldReturnUserDidLogin_Sucess - 2019.09.29 at 08h 06m 30s.xml">
       <configuration name="LoginPresenterImplTest.whenClickBtnLogin_shouldReturnUserDidLogin_Sucess" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="LoginPresenterImplTest - 2019.09.22 at 11h 58m 41s.xml">
-      <configuration name="LoginPresenterImplTest" configurationId="AndroidJUnit" />
+    <history-entry file="LoginPresenterImplTest_whenClickBtnLogin_shouldReturnUserDidLogin_Sucess - 2019.09.29 at 08h 34m 41s.xml">
+      <configuration name="LoginPresenterImplTest.whenClickBtnLogin_shouldReturnUserDidLogin_Sucess" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="LoginPresenterImplTest_whenClickBtnLogin_shouldReturnUserDidLogin_Sucess - 2019.09.29 at 08h 38m 16s.xml">
+      <configuration name="LoginPresenterImplTest.whenClickBtnLogin_shouldReturnUserDidLogin_Sucess" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="LoginPresenterImplTest_whenClickBtnLogin_shouldReturnUserDidLogin_Sucess - 2019.09.29 at 08h 40m 09s.xml">
+      <configuration name="LoginPresenterImplTest.whenClickBtnLogin_shouldReturnUserDidLogin_Sucess" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="LoginPresenterImplTest_whenClickBtnLogin_shouldReturnUserDidLogin_Sucess - 2019.09.29 at 08h 44m 57s.xml">
+      <configuration name="LoginPresenterImplTest.whenClickBtnLogin_shouldReturnUserDidLogin_Sucess" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="LoginPresenterImplTest_whenClickBtnLogin_shouldReturnUserDidLogin_Sucess - 2019.09.29 at 08h 47m 26s.xml">
+      <configuration name="LoginPresenterImplTest.whenClickBtnLogin_shouldReturnUserDidLogin_Sucess" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="LoginPresenterImplTest_whenClickBtnLogin_shouldReturnUserDidLogin_Sucess - 2019.09.29 at 08h 49m 24s.xml">
+      <configuration name="LoginPresenterImplTest.whenClickBtnLogin_shouldReturnUserDidLogin_Sucess" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="LoginPresenterImplTest_whenClickBtnLogin_shouldReturnUserDidLogin_Sucess - 2019.09.29 at 08h 50m 28s.xml">
+      <configuration name="LoginPresenterImplTest.whenClickBtnLogin_shouldReturnUserDidLogin_Sucess" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="LoginPresenterImplTest_whenClickBtnLogin_shouldReturnUserDidLogin_Sucess - 2019.09.29 at 08h 50m 54s.xml">
+      <configuration name="LoginPresenterImplTest.whenClickBtnLogin_shouldReturnUserDidLogin_Sucess" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="LoginPresenterImplTest_whenClickBtnLogin_shouldReturnUserDidLogin_Sucess - 2019.09.29 at 08h 51m 24s.xml">
+      <configuration name="LoginPresenterImplTest.whenClickBtnLogin_shouldReturnUserDidLogin_Sucess" configurationId="AndroidJUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -729,7 +608,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3297568" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.3297568" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -737,17 +616,17 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.49928468" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Run" order="0" sideWeight="0.49928468" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Logcat" order="1" weight="0.32907802" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32907802" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32907802" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5007153" side_tool="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32907802" />
-      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32907802" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32907802" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32907802" />
-      <window_info anchor="bottom" id="Android Profiler" order="10" weight="0.32907802" />
+      <window_info anchor="bottom" id="Android Profiler" order="10" show_stripe_button="false" weight="0.32907802" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
@@ -773,13 +652,13 @@
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSource.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSourceImpl.kt</url>
           <line>6</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSource.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSourceImpl.kt</url>
           <line>8</line>
           <properties />
           <option name="timeStamp" value="28" />
@@ -792,30 +671,30 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserDataSourceTest.kt</url>
-          <line>29</line>
+          <line>27</line>
           <properties />
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/AndroidCWBApplication.kt</url>
-          <line>16</line>
+          <line>18</line>
           <properties />
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/AndroidCWBMvpFactory.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di/AndroidCWBMvpFactory.kt</url>
           <line>26</line>
           <properties />
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSource.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSourceImpl.kt</url>
           <line>17</line>
           <properties />
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSource.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSourceImpl.kt</url>
           <line>13</line>
           <properties />
           <option name="timeStamp" value="67" />
@@ -863,7 +742,7 @@
           <option name="timeStamp" value="79" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSource.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSourceImpl.kt</url>
           <line>22</line>
           <properties />
           <option name="timeStamp" value="83" />
@@ -875,49 +754,43 @@
           <option name="timeStamp" value="84" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSource.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSourceImpl.kt</url>
           <line>19</line>
           <properties />
           <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSource.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSourceImpl.kt</url>
           <line>18</line>
           <properties />
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSource.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSourceImpl.kt</url>
           <line>23</line>
           <properties />
           <option name="timeStamp" value="88" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/AndroidCWBMvpFactory.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di/AndroidCWBMvpFactory.kt</url>
           <line>43</line>
           <properties />
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/AndroidCWBMvpFactory.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di/AndroidCWBMvpFactory.kt</url>
           <line>34</line>
           <properties />
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/AndroidCWBMvpFactory.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di/AndroidCWBMvpFactory.kt</url>
           <line>35</line>
           <properties />
           <option name="timeStamp" value="91" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginActivity.kt</url>
-          <line>51</line>
-          <properties />
-          <option name="timeStamp" value="92" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSource.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSourceImpl.kt</url>
           <line>29</line>
           <properties />
           <option name="timeStamp" value="107" />
@@ -930,92 +803,134 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginActivity.kt</url>
-          <line>54</line>
+          <line>43</line>
           <properties />
           <option name="timeStamp" value="110" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginActivity.kt</url>
-          <line>56</line>
+          <line>45</line>
           <properties />
           <option name="timeStamp" value="112" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginActivity.kt</url>
-          <line>57</line>
-          <properties />
-          <option name="timeStamp" value="113" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginActivity.kt</url>
-          <line>55</line>
+          <line>44</line>
           <properties />
           <option name="timeStamp" value="114" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/AndroidCWBMvvm.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di/AndroidCWBMvvm.kt</url>
           <line>32</line>
           <properties />
           <option name="timeStamp" value="115" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/AndroidCWBMvvm.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di/AndroidCWBMvvm.kt</url>
           <line>29</line>
           <properties />
           <option name="timeStamp" value="116" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModelImpl.kt</url>
-          <line>40</line>
+          <line>31</line>
           <properties />
           <option name="timeStamp" value="118" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModelImpl.kt</url>
-          <line>41</line>
+          <line>32</line>
           <properties />
           <option name="timeStamp" value="119" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModelImpl.kt</url>
-          <line>48</line>
+          <line>38</line>
           <properties />
           <option name="timeStamp" value="120" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModelImpl.kt</url>
-          <line>49</line>
+          <line>39</line>
           <properties />
           <option name="timeStamp" value="121" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModelImpl.kt</url>
-          <line>52</line>
-          <properties />
-          <option name="timeStamp" value="122" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModelImpl.kt</url>
-          <line>55</line>
-          <properties />
-          <option name="timeStamp" value="123" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModelImpl.kt</url>
-          <line>54</line>
-          <properties />
-          <option name="timeStamp" value="124" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSource.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSourceImpl.kt</url>
           <line>30</line>
           <properties />
           <option name="timeStamp" value="125" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-field">
-          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/AndroidCWBMvvm.kt</url>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/LoginModuleTest.kt</url>
           <line>26</line>
-          <properties myFieldName="job" myClassName="carlos.nicolau.galves.androidcwb.framework.di_native.AndroidCWBMvvm" />
+          <properties />
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/room/AndroidCWBRoom.kt</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/room/AndroidCWBRoom.kt</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/LoginPresenterImplTest.kt</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/LoginPresenterImplTest.kt</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/LoginPresenterImplTest.kt</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModelImpl.kt</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/LoginPresenterImplTest.kt</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModelImpl.kt</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModelImpl.kt</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSourceImpl.kt</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-field">
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di/AndroidCWBMvvm.kt</url>
+          <line>26</line>
+          <properties myFieldName="job" myClassName="carlos.nicolau.galves.androidcwb.framework.di.AndroidCWBMvvm" />
           <option name="timeStamp" value="117" />
         </line-breakpoint>
       </breakpoints>
@@ -1027,200 +942,65 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>db.getUserDAO().getAllUser()</expression-string>
+        <expression-string>login.viewState.observe(viewState)</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>mainDispacher</expression-string>
+        <expression-string>viewState != null</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>db.getUserDAO() != null</expression-string>
+        <expression-string>LoginViewModel.ViewState.isLoading(true)</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>db.getUserDAO()</expression-string>
+        <expression-string>_viewState.value = LoginViewModel.ViewState.isLoading(true)</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>db</expression-string>
+        <expression-string>_viewState != null</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>modelClass.getConstructor(
-                Application::class.java,
-                AndroidCWBRoom::class.java,
-                IGetUserUseCase::class.java
-            )</expression-string>
+        <expression-string>_viewState</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>userFromUseCase.</expression-string>
+        <expression-string>_viewState.value</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>userFromUseCase</expression-string>
+        <expression-string>login.viewState.observe(observer)</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>modelClass.getConstructor(
-                Application::class.java,
-                AndroidCWBRoom::class.java,
-                CoroutineDispatcher::class.java,
-                MainCoroutineDispatcher::class.java,
-                Interactors::class.java
-            )</expression-string>
+        <expression-string>login.viewState != null</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.test/monitor/1.2.0/dbbc3050e0945ecea95f4e25b72e169cfe6f32bc/monitor-1.2.0-sources.jar!/androidx/test/platform/app/InstrumentationRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/source/kapt/debug/carlos/nicolau/galves/androidcwb/framework/room/UserDAO_Impl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2145">
-          <caret line="159" column="12" selection-start-line="159" selection-start-column="12" selection-end-line="159" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/carlos/nicolau/galves/androidcwb/feature/UserDAORoomTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="e#50#473#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserRepositoryImplTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserUseCaseTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="77" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/class22.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/ViewState.kt" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-viewmodel/2.1.0/bfd86b9887c2343516f82bed91acbab34a45841d/lifecycle-viewmodel-2.1.0-sources.jar!/androidx/lifecycle/ViewModelProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="124" column="35" selection-start-line="124" selection-start-column="35" selection-end-line="124" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-29/android.jar!/java/lang/reflect/Constructor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="74" column="13" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/carlos/nicolau/galves/androidcwb/framework/room/AndroidCWBRoom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-29/android.jar!/android/app/Instrumentation.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="197" column="16" selection-start-line="197" selection-start-column="16" selection-end-line="197" selection-end-column="16" />
-          <folding>
-            <element signature="e#5677#5678#0" expanded="true" />
-            <element signature="e#5728#5729#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-29/android.jar!/java/lang/Class.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="205" column="26" selection-start-line="205" selection-start-column="26" selection-end-line="205" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-29/android.jar!/android/app/Application.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/1.2.1/75e0ac676a7c7ef6239179b415d86ed002a7cc2c/kotlinx-coroutines-core-1.2.1-sources.jar!/commonMain/MainCoroutineDispatcher.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/1.2.1/75e0ac676a7c7ef6239179b415d86ed002a7cc2c/kotlinx-coroutines-core-1.2.1-sources.jar!/commonMain/CoroutineDispatcher.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/1.2.1/75e0ac676a7c7ef6239179b415d86ed002a7cc2c/kotlinx-coroutines-core-1.2.1-sources.jar!/commonMain/CoroutineDispatcher.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/launch.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/async.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/provider/Interactors.kt" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-viewmodel/2.1.0/bfd86b9887c2343516f82bed91acbab34a45841d/lifecycle-viewmodel-2.1.0-sources.jar!/androidx/lifecycle/AndroidViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
-          <folding>
-            <element signature="e#1113#1114#0" expanded="true" />
-            <element signature="e#1155#1156#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/1.2.1/75e0ac676a7c7ef6239179b415d86ed002a7cc2c/kotlinx-coroutines-core-1.2.1-sources.jar!/commonMain/Builders.common.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1856">
-          <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-viewmodel/2.1.0/bfd86b9887c2343516f82bed91acbab34a45841d/lifecycle-viewmodel-2.1.0-sources.jar!/androidx/lifecycle/AndroidViewModel.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/1.2.1/75e0ac676a7c7ef6239179b415d86ed002a7cc2c/kotlinx-coroutines-core-1.2.1-sources.jar!/commonMain/Builders.common.kt" />
     <entry file="file://$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/domain/User.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/provider/AppDispatcherProvider.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -1232,47 +1012,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModel.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/data/IGetUserDataSource.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-          <folding>
-            <element signature="e#41#130#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/AndroidCWBMvpFactory.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding>
-            <element signature="e#62#400#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/data/IGetUserRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.koin/koin-android-viewmodel/2.0.1/e42f8fd1b9d593c283cd828f40c9ee988d524f72/koin-android-viewmodel-2.0.1-sources.jar!/org/koin/android/viewmodel/dsl/ModuleExt.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.koin/koin-android-viewmodel/2.0.1/e42f8fd1b9d593c283cd828f40c9ee988d524f72/koin-android-viewmodel-2.0.1-sources.jar!/org/koin/android/viewmodel/dsl/ModuleExt.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/provider/DispatcherProvider.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1280,41 +1020,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/data/GetUserRepositoryImpl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
           <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/interators/GetUserUseCaseImpl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/Interactors.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/AndroidCWBApplication.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/utils-mvp/src/main/java/carlos/nicolau/galves/utils/BasePresenter.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -1323,34 +1035,6 @@
           <folding>
             <element signature="e#37#155#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/appModule.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata-core/2.1.0/5411028b44e34d8adc95797fe7f6e05d322ebe83/lifecycle-livedata-core-2.1.0-sources.jar!/androidx/lifecycle/LiveData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="317" column="13" selection-start-line="317" selection-start-column="13" selection-end-line="317" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/interators/IGetUserUseCase.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
         </state>
       </provider>
     </entry>
@@ -1375,44 +1059,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/room/UserEntityMapper.kt">
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/kapt/debug/carlos/nicolau/galves/androidcwb/framework/room/AndroidCWBRoom_Impl.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di/AndroidCWBMvpFactory.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="255">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding>
+            <element signature="e#62#400#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSource.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/Interactors.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.koin/koin-core/2.0.1/fb8806444773bba5ca3903a43c6b49bdf95a31d4/koin-core-2.0.1-sources.jar!/org/koin/core/context/GlobalContext.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/carlos/nicolau/galves/androidcwb/feature/UserDAORoomTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <caret line="28" column="59" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="59" />
+          <folding>
+            <element signature="e#50#473#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserDataSourceTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/AndroidCWBMvvm.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di/AndroidCWBMvvm.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModelImpl.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata-core/2.1.0/5411028b44e34d8adc95797fe7f6e05d322ebe83/lifecycle-livedata-core-2.1.0-sources.jar!/androidx/lifecycle/LiveData.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/1.2.1/75e0ac676a7c7ef6239179b415d86ed002a7cc2c/kotlinx-coroutines-core-1.2.1-sources.jar!/commonMain/Dispatched.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di/appModule.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="764">
+          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/data/GetUserDataSource.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding>
+            <element signature="e#41#130#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/data/GetUserRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/data/GetUserRepositoryImpl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/interators/GetUserUseCaseImpl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/interators/GetUserUseCase.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/AndroidCWBApplication.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/room/AndroidCWBRoom.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
+        <state relative-caret-position="345">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="e#57#177#0" expanded="true" />
@@ -1420,20 +1159,139 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="63" column="24" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSourceImpl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.gradle/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/Rule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-96">
-          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+        <state relative-caret-position="615">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/proguard-rules.pro">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/room/UserEntityMapper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserUseCaseTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/ExampleUnitTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#56#166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModelImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginViewModelImpl.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+          <folding>
+            <element signature="e#61#394#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserDataSourceTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/LoginModuleTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#56#601#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/LoginPresenterImplTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#56#729#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="261">
+          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
         </state>
       </provider>
     </entry>

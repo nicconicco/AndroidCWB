@@ -22,11 +22,23 @@ android {
         experimental = true
     }
 
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+
+    kapt {
+        correctErrorTypes true
+    }
+
+    kapt {
+        generateStubs = true
     }
 }
 
@@ -60,11 +72,14 @@ dependencies {
     androidTestImplementation 'org.mockito:mockito-android:2.28.2'
     testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0"
 
+    //Test helpers for LiveData
+    testImplementation 'android.arch.core:core-testing:1.1.1'
+
     //Koin
     implementation 'org.koin:koin-android:2.0.1'
     implementation 'org.koin:koin-core:2.0.1'
     implementation 'org.koin:koin-android-viewmodel:2.0.1'
-    testCompile 'org.koin:koin-test:2.0.1'
+    testImplementation 'org.koin:koin-test:2.0.1'
 
     //Coroutines
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.2.1"
