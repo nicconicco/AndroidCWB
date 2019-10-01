@@ -13,6 +13,7 @@ import org.koin.android.viewmodel.ext.android.viewModel
 
 class LoginActivity : AppCompatActivity() {
 
+    //region actions
     fun errorLogin(error: String) {
         Toast.makeText(this, error, Toast.LENGTH_LONG).show()
     }
@@ -29,7 +30,7 @@ class LoginActivity : AppCompatActivity() {
     fun hideLoading() {
         loading.visibility = View.INVISIBLE
     }
-
+    //endregion actions
     val loginViewModel: LoginViewModelImpl by viewModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,11 +41,9 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
-
         login.setOnClickListener {
             loginViewModel.viewState.observe(this, Observer {
                 when (it) {
-
                     is LoginViewModel.ViewState.isLoading -> {
                         when (it.load) {
                             true -> {
@@ -75,6 +74,7 @@ class LoginActivity : AppCompatActivity() {
                     }
                 }
             })
+
             loginViewModel.onClickBtnLogin(username.text.toString(), password.text.toString())
         }
     }

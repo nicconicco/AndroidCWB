@@ -19,7 +19,7 @@ class LoginViewModelImpl(
         application, db, interactors, mainDispacher, ioDispacher
     ), LoginViewModel.actions {
 
-    val _viewState by lazy {  MutableLiveData<LoginViewModel.ViewState>() }
+    private val _viewState by lazy {  MutableLiveData<LoginViewModel.ViewState>() }
     val viewState: LiveData<LoginViewModel.ViewState> get() = _viewState
 
     private val uiScope = CoroutineScope(mainDispacher + job)

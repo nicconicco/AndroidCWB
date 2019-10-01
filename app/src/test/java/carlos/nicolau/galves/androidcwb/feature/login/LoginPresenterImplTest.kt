@@ -2,9 +2,6 @@ package carlos.nicolau.galves.androidcwb.feature.login
 
 import androidx.lifecycle.Observer
 import carlos.nicolau.galves.androidcwb.framework.AndroidCWBApplication
-import carlos.nicolau.galves.androidcwb.framework.room.AndroidCWBRoom
-import carlos.nicolau.galves.androidcwb.framework.room.UserDAO
-import carlos.nicolau.galves.androidcwb.framework.room.UserEntity
 import carlos.nicolau.galves.androidcwb.presentation.login.LoginViewModel
 import carlos.nicolau.galves.androidcwb.presentation.login.LoginViewModelImpl
 import carlos.nicolau.galves.core.domain.User
@@ -15,6 +12,9 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
+import carlos.nicolau.galves.androidcwb.framework.room.AndroidCWBRoom
+import carlos.nicolau.galves.androidcwb.framework.room.UserDAO
+import carlos.nicolau.galves.androidcwb.framework.room.UserEntity
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.core.IsInstanceOf
 import org.mockito.Mock

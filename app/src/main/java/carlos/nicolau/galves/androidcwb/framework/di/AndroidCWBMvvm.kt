@@ -2,7 +2,6 @@ package carlos.nicolau.galves.androidcwb.framework.di
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
-import carlos.nicolau.galves.androidcwb.framework.AndroidCWBApplication
 import carlos.nicolau.galves.androidcwb.framework.room.AndroidCWBRoom
 import carlos.nicolau.galves.core.interators.GetUserUseCase
 import kotlinx.coroutines.CoroutineDispatcher
@@ -19,9 +18,6 @@ open class AndroidCWBMvvm(
     ioDispacher : CoroutineDispatcher
 ) :
     AndroidViewModel(application), CoroutineScope {
-
-    protected val application: AndroidCWBApplication = getApplication()
-    protected val db: AndroidCWBRoom = AndroidCWBRoom.getDatabase(application)
 
     val job = SupervisorJob()
 
