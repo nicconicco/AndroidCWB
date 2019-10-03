@@ -2,7 +2,7 @@ package carlos.nicolau.galves.androidcwb
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MutableLiveData
-import junit.framework.Assert.assertEquals
+import junit.framework.TestCase.assertEquals
 import org.junit.Rule
 import org.junit.Test
 

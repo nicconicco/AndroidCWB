@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "677746248933",
+    "firebase_url": "https://androidcwb-c65da.firebaseio.com",
+    "project_id": "androidcwb-c65da",
+    "storage_bucket": "androidcwb-c65da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677746248933:android:718c74d5e7474c5f1b180c",
+        "android_client_info": {
+          "package_name": "carlos.nicolau.galves.androidcwb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677746248933-qqil4ut6vbgiu1mhp5cklsvn2oev2gl7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "carlos.nicolau.galves.androidcwb",
+            "certificate_hash": "58ad46493a9a47ce914d9588195f7241a5f96f39"
+          }
+        },
+        {
+          "client_id": "677746248933-uns4o32omlv69jl41e5b8o2t1jdvbs84.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAppima_KI0ddn97slWt3HOTBL8qVG_ggI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677746248933-uns4o32omlv69jl41e5b8o2t1jdvbs84.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
