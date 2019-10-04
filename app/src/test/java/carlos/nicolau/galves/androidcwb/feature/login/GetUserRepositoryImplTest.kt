@@ -2,6 +2,9 @@ package carlos.nicolau.galves.androidcwb.feature.login
 
 import carlos.nicolau.galves.core.data.GetUserDataSource
 import carlos.nicolau.galves.core.data.GetUserRepositoryImpl
+import carlos.nicolau.galves.core.domain.User
+import carlos.nicolau.galves.core.errors.ErroType
+import carlos.nicolau.galves.core.utils.Callback
 import org.junit.Test
 import org.mockito.Mockito
 
@@ -12,11 +15,13 @@ class GetUserRepositoryImplTest {
     @Test
     fun whenGetUserRepositoryImplCall_shoulReturnUser() {
 
-        val getUserRepositoryImpl = GetUserRepositoryImpl(dataSource)
-        getUserRepositoryImpl.execute("","")
+        val callback = Callback<User, ErroType>()
 
-        Mockito.verify(dataSource, Mockito.atLeast(1)).execute("","")
-        Mockito.verify(dataSource).execute("","")
+        val getUserRepositoryImpl = GetUserRepositoryImpl(dataSource)
+        getUserRepositoryImpl.execute("","", callback)
+
+        Mockito.verify(dataSource, Mockito.atLeast(1)).execute("","", callback)
+        Mockito.verify(dataSource).execute("","", callback)
         Mockito.verifyNoMoreInteractions(dataSource)
     }
 }

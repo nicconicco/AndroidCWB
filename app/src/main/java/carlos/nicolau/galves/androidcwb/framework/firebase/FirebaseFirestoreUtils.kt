@@ -1,47 +1,61 @@
 package carlos.nicolau.galves.androidcwb.framework.firebase
 
 import android.annotation.SuppressLint
-import android.content.ContentValues
 import android.util.Log
+import carlos.nicolau.galves.core.utils.Callback
 import carlos.nicolau.galves.core.domain.User
+import carlos.nicolau.galves.core.errors.ErroType
 import com.google.firebase.firestore.FirebaseFirestore
 
 abstract class FirebaseFirestoreUtils {
-    companion object {
 
+    companion object {
         enum class UserEnum(val value: String) {
             ADMIN("ADMIN"),
-            USERS("users")
+            USERS("users"),
+            LOGIN("login"),
+            PASSWORD("password"),
         }
 
+        private val TAG: String = FirebaseFirestoreUtils::class.java.simpleName
         @SuppressLint("StaticFieldLeak")
         @Volatile
         private var INSTANCE: FirebaseFirestore? = null
 
-        internal fun getInstance(): FirebaseFirestore {
+        fun getInstance(): FirebaseFirestore {
             if (INSTANCE == null) {
                 INSTANCE = FirebaseFirestore.getInstance()
             }
             return INSTANCE!!
         }
 
-        internal fun getUser(db: FirebaseFirestore) {
+        internal fun getUser(
+            login: String,
+            password: String,
+            callback: Callback<User, ErroType>,
+            db: FirebaseFirestore = getInstance()) {
 
-            val docRef =
-                db
-                    .collection(UserEnum.USERS.value)
-                    .document(UserEnum.ADMIN.value)
-
-            docRef.get()
-                .addOnSuccessListener { document ->
-                    if (document != null) {
-                        Log.d(ContentValues.TAG, "DocumentSnapshot data: ${document.data}")
+            db.collection(UserEnum.USERS.value)
+                .whereEqualTo(UserEnum.LOGIN.value, login)
+                .whereEqualTo(UserEnum.PASSWORD.value, password)
+                .get()
+                .addOnSuccessListener { documents ->
+                    if(documents.isEmpty) {
+                        Log.d(TAG, ErroType.ERRO_USER_NOT_FOUND.value)
+                        callback.onError(ErroType.ERRO_USER_NOT_FOUND)
                     } else {
-                        Log.d(ContentValues.TAG, "No such document")
+                        for (document in documents) {
+                            val user: User? = document.toObject(User::class.java)
+                            user?.let {
+                                callback.onSuccess(user)
+                            }
+                            Log.d(TAG, "${document.id} => ${document.data}")
+                        }
                     }
                 }
                 .addOnFailureListener { exception ->
-                    Log.d(ContentValues.TAG, "get failed with ", exception)
+                    Log.w(TAG, "Error getting documents: ", exception)
+                    callback.onError(ErroType.ERRO_404)
                 }
         }
 
