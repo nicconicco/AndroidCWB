@@ -10,18 +10,18 @@ import carlos.nicolau.galves.core.domain.User
 import carlos.nicolau.galves.core.errors.ErroType
 
 class GetUserDataSourceImpl(
-    private val db: AndroidCWBRoom
+    private val db: AndroidCWBRoom,
+    private val firebase: FirebaseFirestoreUtils
 ) : GetUserDataSource {
 
     override fun execute(username: String, password: String, callback: Callback<User, ErroType>) {
-        FirebaseFirestoreUtils.getUser(username, password, callback)
+        firebase.getUser(username, password, callback)
 //        return getUserDB()
     }
 
     override fun getUserDB(): User? {
 
-        FirebaseFirestoreUtils.addUser(
-            FirebaseFirestoreUtils.getInstance(),
+        firebase.addUser(
             User()
         )
 
@@ -37,8 +37,7 @@ class GetUserDataSourceImpl(
     }
 
     private fun insertUserEntityInDbAndReturnUser(): UserEntity {
-        FirebaseFirestoreUtils.addUser(
-            FirebaseFirestoreUtils.getInstance(),
+        firebase.addUser(
             User()
         )
 

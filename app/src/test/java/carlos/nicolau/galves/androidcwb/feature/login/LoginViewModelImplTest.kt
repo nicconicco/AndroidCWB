@@ -75,7 +75,7 @@ class LoginViewModelImplTest {
         }.`when`(getUserUseCase).execute(anyString(), anyString(), resultCaptor.capture())
 
         // When
-        login.onClickBtnLogin(anyString(), anyString())
+        login.onClickBtnLogin("", "")
 
         // Then
         assert(login.viewState.value != null)
