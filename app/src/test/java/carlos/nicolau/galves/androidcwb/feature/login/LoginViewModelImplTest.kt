@@ -66,10 +66,6 @@ class LoginViewModelImplTest {
     @Test
     fun `Given LoginViewModel when ClickBtnLogin should Return UserDidLogin and GoToHome Success`() = runBlocking {
         // Given
-        val user = User()
-        val list: ArrayList<UserEntity> = ArrayList()
-        list.add(UserEntity(didLogin = true))
-
         val expectedStateSuccess = LoginViewModel.ViewState.goToHome::class.java
         val resultCaptor = argumentCaptor<Callback<User, ErroType>>()
 
@@ -79,7 +75,7 @@ class LoginViewModelImplTest {
         }.`when`(getUserUseCase).execute(anyString(), anyString(), resultCaptor.capture())
 
         // When
-        login.onClickBtnLogin("nicco2", "nicco")
+        login.onClickBtnLogin(anyString(), anyString())
 
         // Then
         assert(login.viewState.value != null)
