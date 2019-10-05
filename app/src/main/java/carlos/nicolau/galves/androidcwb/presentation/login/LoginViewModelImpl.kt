@@ -39,8 +39,10 @@ class LoginViewModelImpl(
 
     private suspend fun getUser(username: String, password: String) {
         ioScope.async {
-            return@async interactors.execute(username, password, object :
-                Callback<User, ErroType>() {
+            return@async interactors.execute(
+                username,
+                password,
+                object : Callback<User, ErroType>() {
                 override fun onSuccess(result: User) {
                     _viewState.value = LoginViewModel.ViewState.isLoading(false)
                     _viewState.value = LoginViewModel.ViewState.goToHome
