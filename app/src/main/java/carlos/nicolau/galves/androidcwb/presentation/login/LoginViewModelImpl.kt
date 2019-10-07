@@ -5,8 +5,10 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import carlos.nicolau.galves.androidcwb.framework.di.AndroidCWBMvvm
 import carlos.nicolau.galves.androidcwb.framework.room.AndroidCWBRoom
+import carlos.nicolau.galves.androidcwb.framework.util.InternetUtils
+import carlos.nicolau.galves.androidcwb.framework.util.InternetUtilsImpl
 import carlos.nicolau.galves.core.domain.User
-import carlos.nicolau.galves.core.errors.ErroType
+import carlos.nicolau.galves.core.errors.ErrorType
 import carlos.nicolau.galves.core.interators.GetUserUseCase
 import carlos.nicolau.galves.core.utils.Callback
 import kotlinx.coroutines.*
@@ -16,10 +18,11 @@ class LoginViewModelImpl(
     db: AndroidCWBRoom,
     interactors: GetUserUseCase,
     mainDispacher: CoroutineDispatcher,
-    ioDispacher: CoroutineDispatcher
+    ioDispacher: CoroutineDispatcher,
+    internetUtils: InternetUtils
 ) :
     AndroidCWBMvvm(
-        application, db, interactors, mainDispacher, ioDispacher
+        application, db, interactors, mainDispacher, ioDispacher, internetUtils
     ), LoginViewModel.actions {
 
     private val _viewState by lazy { MutableLiveData<LoginViewModel.ViewState>() }
@@ -32,8 +35,13 @@ class LoginViewModelImpl(
 
         _viewState.value = LoginViewModel.ViewState.isLoading(true)
 
-        uiScope.launch {
-            getUser(username, password)
+        if(internetUtils.isNetworkAvailable()) {
+            uiScope.launch {
+                getUser(username, password)
+            }
+        } else {
+            _viewState.value = LoginViewModel.ViewState.isLoading(false)
+            _viewState.value = LoginViewModel.ViewState.errorLogin(ErrorType.ERRO_INTERNET)
         }
     }
 
@@ -42,16 +50,16 @@ class LoginViewModelImpl(
             return@async interactors.execute(
                 username,
                 password,
-                object : Callback<User, ErroType>() {
+                object : Callback<User, ErrorType>() {
                 override fun onSuccess(result: User) {
                     _viewState.value = LoginViewModel.ViewState.isLoading(false)
                     _viewState.value = LoginViewModel.ViewState.goToHome
                 }
 
-                override fun onError(error: ErroType) {
+                override fun onError(error: ErrorType) {
                     super.onError(error)
                     _viewState.value = LoginViewModel.ViewState.isLoading(false)
-                    _viewState.value = LoginViewModel.ViewState.errorLogin(ErroType.ERRO_INTERNET)
+                    _viewState.value = LoginViewModel.ViewState.errorLogin(error)
                 }
             })
         }.await()

@@ -7,21 +7,20 @@ import carlos.nicolau.galves.androidcwb.framework.room.UserEntityMapper
 import carlos.nicolau.galves.core.utils.Callback
 import carlos.nicolau.galves.core.data.GetUserDataSource
 import carlos.nicolau.galves.core.domain.User
-import carlos.nicolau.galves.core.errors.ErroType
+import carlos.nicolau.galves.core.errors.ErrorType
 
 class GetUserDataSourceImpl(
     private val db: AndroidCWBRoom,
-    private val firebase: FirebaseFirestoreUtils
+    private val firebaseFirestoreUtils: FirebaseFirestoreUtils
 ) : GetUserDataSource {
 
-    override fun execute(username: String, password: String, callback: Callback<User, ErroType>) {
-        firebase.getUser(username, password, callback)
-//        return getUserDB()
+    override fun execute(username: String, password: String, callback: Callback<User, ErrorType>) {
+        firebaseFirestoreUtils.getUser(username, password, callback)
     }
 
     override fun getUserDB(): User? {
 
-        firebase.addUser(
+        firebaseFirestoreUtils.addUser(
             User()
         )
 
@@ -37,7 +36,7 @@ class GetUserDataSourceImpl(
     }
 
     private fun insertUserEntityInDbAndReturnUser(): UserEntity {
-        firebase.addUser(
+        firebaseFirestoreUtils.addUser(
             User()
         )
 

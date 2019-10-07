@@ -2,7 +2,7 @@ package carlos.nicolau.galves.androidcwb.feature.login
 
 import carlos.nicolau.galves.core.data.GetUserRepositoryImpl
 import carlos.nicolau.galves.core.domain.User
-import carlos.nicolau.galves.core.errors.ErroType
+import carlos.nicolau.galves.core.errors.ErrorType
 import carlos.nicolau.galves.core.interators.GetUserUseCaseImpl
 import carlos.nicolau.galves.core.utils.Callback
 import org.junit.Test
@@ -14,7 +14,7 @@ class GetUserUseCaseTest {
 
     @Test
     fun whenGetUserUseCaseCall_shoulCallRepositoryAndReturnUser() {
-        val callback = Callback<User, ErroType>()
+        val callback = Callback<User, ErrorType>()
 
         val getUserUseCase = GetUserUseCaseImpl(getUserRepositoryImpl)
 

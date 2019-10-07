@@ -1,18 +1,21 @@
 package carlos.nicolau.galves.androidcwb.framework.di
 
 import androidx.room.Room
+import carlos.nicolau.galves.androidcwb.framework.AndroidCWBApplication
 import carlos.nicolau.galves.androidcwb.framework.data_source.GetUserDataSourceImpl
 import carlos.nicolau.galves.androidcwb.framework.firebase.FirebaseFirestoreUtils
 import carlos.nicolau.galves.androidcwb.framework.firebase.FirebaseFirestoreUtilsImpl
 import carlos.nicolau.galves.androidcwb.framework.provider.AppDispatcherProvider
 import carlos.nicolau.galves.androidcwb.framework.provider.DispatcherProvider
 import carlos.nicolau.galves.androidcwb.framework.room.AndroidCWBRoom
+import carlos.nicolau.galves.androidcwb.framework.util.InternetUtils
+import carlos.nicolau.galves.androidcwb.framework.util.InternetUtilsImpl
 import carlos.nicolau.galves.androidcwb.presentation.login.LoginViewModelImpl
 import carlos.nicolau.galves.core.data.GetUserDataSource
-import carlos.nicolau.galves.core.data.GetUserRepositoryImpl
 import carlos.nicolau.galves.core.data.GetUserRepository
-import carlos.nicolau.galves.core.interators.GetUserUseCaseImpl
+import carlos.nicolau.galves.core.data.GetUserRepositoryImpl
 import carlos.nicolau.galves.core.interators.GetUserUseCase
+import carlos.nicolau.galves.core.interators.GetUserUseCaseImpl
 import com.google.firebase.firestore.FirebaseFirestore
 import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.core.context.loadKoinModules
@@ -62,6 +65,10 @@ internal val appModule = module(override = true) {
     single<FirebaseFirestoreUtils> { FirebaseFirestoreUtilsImpl(FirebaseFirestore.getInstance()) }
     //endregion
 
+    //region InternetUtils
+    single <InternetUtils>{ InternetUtilsImpl(get()) }
+    //endregion
+
     //region ViewModel
     viewModel {
         LoginViewModelImpl(
@@ -71,7 +78,8 @@ internal val appModule = module(override = true) {
                 GetUserRepositoryImpl(GetUserDataSourceImpl(get(), get()))
             ),
             AppDispatcherProvider().ui(),
-            AppDispatcherProvider().io()
+            AppDispatcherProvider().io(),
+            get()
         )
     }
     //endregion

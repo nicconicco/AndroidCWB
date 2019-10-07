@@ -2,7 +2,7 @@ package carlos.nicolau.galves.androidcwb.framework.firebase
 
 import android.util.Log
 import carlos.nicolau.galves.core.domain.User
-import carlos.nicolau.galves.core.errors.ErroType
+import carlos.nicolau.galves.core.errors.ErrorType
 import carlos.nicolau.galves.core.utils.Callback
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -13,7 +13,7 @@ class FirebaseFirestoreUtilsImpl(val firebaseFirestore: FirebaseFirestore) : Fir
     override fun getUser(
         login: String,
         password: String,
-        callback: Callback<User, ErroType>
+        callback: Callback<User, ErrorType>
     ) {
         firebaseFirestore.collection(UserEnum.USERS.value)
             .whereEqualTo(UserEnum.LOGIN.value, login)
@@ -21,8 +21,8 @@ class FirebaseFirestoreUtilsImpl(val firebaseFirestore: FirebaseFirestore) : Fir
             .get()
             .addOnSuccessListener { documents ->
                 if(documents.isEmpty) {
-                    Log.d(TAG, ErroType.ERRO_USER_NOT_FOUND.value)
-                    callback.onError(ErroType.ERRO_USER_NOT_FOUND)
+                    Log.d(TAG, ErrorType.ERRO_USER_NOT_FOUND.value)
+                    callback.onError(ErrorType.ERRO_USER_NOT_FOUND)
                 } else {
                     for (document in documents) {
                         val user: User? = document.toObject(User::class.java)
@@ -35,7 +35,7 @@ class FirebaseFirestoreUtilsImpl(val firebaseFirestore: FirebaseFirestore) : Fir
             }
             .addOnFailureListener { exception ->
                 Log.w(TAG, "Error getting documents: ", exception)
-                callback.onError(ErroType.ERRO_404)
+                callback.onError(ErrorType.ERRO_404)
             }
     }
 

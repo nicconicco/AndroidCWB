@@ -7,7 +7,7 @@ import carlos.nicolau.galves.androidcwb.framework.room.UserDAO
 import carlos.nicolau.galves.androidcwb.framework.room.UserEntity
 import carlos.nicolau.galves.androidcwb.presentation.login.LoginViewModel
 import carlos.nicolau.galves.core.domain.User
-import carlos.nicolau.galves.core.errors.ErroType
+import carlos.nicolau.galves.core.errors.ErrorType
 import carlos.nicolau.galves.core.utils.Callback
 import com.google.firebase.FirebaseApp
 import com.nhaarman.mockitokotlin2.argumentCaptor
@@ -23,22 +23,18 @@ class GetUserDataSourceTest {
     private val firebaseApp = mock(FirebaseApp::class.java)
 
     @Test
-    fun whenGetUserDataSourceCall_shoulCallDbRoom() {
+    fun whenGetUserDataSourceCall_shoulCallFirebaseFirestore() {
         //Given
-        val expectedStateSuccess = LoginViewModel.ViewState.goToHome::class.java
-        val resultCaptor = argumentCaptor<Callback<User, ErroType>>()
+        val resultCaptor = argumentCaptor<Callback<User, ErrorType>>()
 
         val list: ArrayList<UserEntity> = ArrayList()
         list.add(UserEntity(didLogin = true))
-        val callback = Callback<User, ErroType>()
+        val callback = Callback<User, ErrorType>()
 
         //When
-//        `when`(dbRoom.getUserDAO()).thenReturn(userDAO)
-//        `when`(dbRoom.getUserDAO().getAllUser()).thenReturn(list)
-
         doAnswer {
             @Suppress("UNCHECKED_CAST")
-            (it.arguments[2] as Callback<User, ErroType>).onSuccess(User())
+            (it.arguments[2] as Callback<User, ErrorType>).onSuccess(User())
         }.`when`(firebaseFirestore).getUser(
             anyString(),
             anyString(), resultCaptor.capture())
