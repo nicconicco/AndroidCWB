@@ -30,7 +30,6 @@ import org.mockito.MockitoAnnotations
 class LoginViewModelImplTest {
 
     private val getUserUseCase: GetUserUseCase = mock(GetUserUseCase::class.java)
-    private val context: Context = mock(Context::class.java)
     private val internetUtils: InternetUtils = mock(InternetUtils::class.java)
     private val application: AndroidCWBApplication = mock(AndroidCWBApplication::class.java)
     private val dbRoom: AndroidCWBRoom = mock(AndroidCWBRoom::class.java)

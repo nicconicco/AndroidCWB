@@ -28,6 +28,12 @@ android {
         }
     }
 
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+
     androidExtensions {
         experimental = true
     }
@@ -102,5 +108,8 @@ dependencies {
 
     //Multidex
     implementation 'com.android.support:multidex:1.0.3'
+
+    //Roboletric
+    testImplementation 'org.robolectric:robolectric:4.3'
 }
 
