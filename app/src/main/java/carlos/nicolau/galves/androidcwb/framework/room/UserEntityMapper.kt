@@ -1,18 +1,18 @@
 package carlos.nicolau.galves.androidcwb.framework.room
 
 import carlos.nicolau.galves.core.domain.User
+import carlos.nicolau.galves.core.utils.Mapper
 
-class UserEntityMapper {
+class UserEntityMapper : Mapper<UserEntity?, User> {
+    override fun mapFrom(from: UserEntity?): User {
+        val user = User()
 
-    companion object {
-        fun transformToUser(userEntity: UserEntity?): User {
-            val user = User()
-
-            userEntity?.let {
-                user.didLogin = it.didLogin
-            }
-
-            return user
+        from?.let {
+            user.didLogin = it.didLogin
+            user.login = it.user
+            user.password = it.token
         }
+
+        return user
     }
 }

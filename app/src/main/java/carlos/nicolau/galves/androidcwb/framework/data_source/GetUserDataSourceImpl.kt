@@ -27,10 +27,10 @@ class GetUserDataSourceImpl(
         val users = db.getUserDAO().getAllUser()
 
         if (users.isNotEmpty()) {
-            return UserEntityMapper.transformToUser(users.first())
+            return UserEntityMapper().mapFrom(users.first())
         }
 
-        return UserEntityMapper.transformToUser(
+        return UserEntityMapper().mapFrom(
             insertUserEntityInDbAndReturnUser()
         )
     }
