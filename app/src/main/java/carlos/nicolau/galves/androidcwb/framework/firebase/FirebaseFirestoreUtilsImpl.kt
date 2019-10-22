@@ -43,7 +43,8 @@ class FirebaseFirestoreUtilsImpl(val firebaseFirestore: FirebaseFirestore) : Fir
         // Create a new user with a first and last name
         val user2 = hashMapOf(
             "didLogin" to userLogged.didLogin,
-            "OSOSOS" to ""
+            "user" to userLogged.login,
+            "password" to userLogged.password
         )
 
         val users = firebaseFirestore.collection(UserEnum.USERS.value)

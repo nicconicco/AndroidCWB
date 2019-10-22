@@ -11,7 +11,10 @@ import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.koin.core.context.loadKoinModules
+import org.koin.android.ext.koin.androidContext
+import org.koin.core.context.startKoin
+import org.koin.core.context.stopKoin
+import org.koin.dsl.module
 import org.koin.test.KoinTest
 import org.koin.test.inject
 import org.robolectric.Robolectric
@@ -20,7 +23,7 @@ import org.robolectric.RuntimeEnvironment
 import org.robolectric.annotation.Config
 
 
-@Config(sdk = [Build.VERSION_CODES.O_MR1])
+@Config(application = AndroidCWBApplication::class, sdk = [Build.VERSION_CODES.O_MR1])
 @RunWith(RobolectricTestRunner::class)
 class LoginActivityTest : KoinTest {
 
@@ -29,14 +32,14 @@ class LoginActivityTest : KoinTest {
     @Before
     fun before(){
 
+
         val app = RuntimeEnvironment.application as AndroidCWBApplication
 
-//        startKoin {  androidLogger(Level.DEBUG)
-//            androidContext(app)
-//            modules(appModule)
-//        }
-
-//        loadKoinModules(appModule)
+        stopKoin()
+        startKoin {
+            androidContext(app)
+            modules(appModule)
+        }
     }
 
     @Test
@@ -50,10 +53,10 @@ class LoginActivityTest : KoinTest {
 
     @Test
     fun clickingButton_shouldChangeMessage() {
-//        val activity = Robolectric.setupActivity(LoginActivity::class.java)
-//
-//        activity.login.performClick()
-//
-//        assertTrue(activity.password.text.toString() == "Robolectric Rocks!")
+        val activity = Robolectric.setupActivity(LoginActivity::class.java)
+
+        activity.login.performClick()
+
+        assertTrue(activity.password.text.toString() == "Robolectric Rocks!")
     }
 }
