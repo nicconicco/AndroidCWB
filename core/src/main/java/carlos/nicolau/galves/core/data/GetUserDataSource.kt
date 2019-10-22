@@ -7,5 +7,5 @@ import carlos.nicolau.galves.core.utils.Callback
 
 interface GetUserDataSource : LifecycleObserver {
     fun execute(username: String, password: String, callback: Callback<User, ErrorType>)
-    fun getUserDB(): User?
+    fun saveUser(user: User, callback: Callback<User, ErrorType>)
 }

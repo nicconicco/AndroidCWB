@@ -8,7 +8,11 @@ interface FirebaseFirestoreUtils {
     fun getUser(
         login: String,
         password: String,
-        callback: Callback<User, ErrorType>)
+        callbackFirestore: Callback<User, ErrorType>
+    )
 
-    fun addUser(userLogged: User)
+    fun addUser(
+        userLogged: User,
+        callbackFirestore: Callback<User, ErrorType>
+    )
 }

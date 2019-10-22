@@ -15,8 +15,9 @@ interface UserDAO {
     fun getAllUser(): List<UserEntity>
 
     @Query(
-        "SELECT * from user WHERE token = :token AND didLogin = :didLogin")
-    fun getUserWithTokenAndDidLogin(token: String, didLogin: Boolean): List<UserEntity>
+        "SELECT * from user WHERE idFirestore = :idFirestore AND didLogin = :didLogin"
+    )
+    fun getUserWithTokenAndDidLogin(idFirestore: String, didLogin: Boolean): List<UserEntity>
 
     @Update
     fun update(vararg user: UserEntity)

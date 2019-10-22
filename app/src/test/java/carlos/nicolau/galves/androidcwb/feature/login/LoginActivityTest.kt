@@ -50,13 +50,4 @@ class LoginActivityTest : KoinTest {
         // Then
         Assert.assertNotNull(activity)
     }
-
-    @Test
-    fun clickingButton_shouldChangeMessage() {
-        val activity = Robolectric.setupActivity(LoginActivity::class.java)
-
-        activity.login.performClick()
-
-        assertTrue(activity.password.text.toString() == "Robolectric Rocks!")
-    }
 }

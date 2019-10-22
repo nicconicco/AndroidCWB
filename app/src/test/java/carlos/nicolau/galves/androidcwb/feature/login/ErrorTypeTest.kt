@@ -25,4 +25,14 @@ class ErrorTypeTest {
     fun test_ERRO_USER_NOT_FOUND() {
         assertEquals("Erro user not found", ErrorType.ERRO_USER_NOT_FOUND.value)
     }
+
+    @Test
+    fun ERRO_USER_NOT_ADDED_FIRESTORE() {
+        assertEquals("Erro user not added on Firestore", ErrorType.ERRO_USER_NOT_ADDED_FIRESTORE.value)
+    }
+
+    @Test
+    fun ERRO_USER_NOT_ADDED_ROOM() {
+        assertEquals("Erro user not added on database Room", ErrorType.ERRO_USER_NOT_ADDED_ROOM.value)
+    }
 }

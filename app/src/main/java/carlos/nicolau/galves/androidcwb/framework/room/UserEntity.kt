@@ -10,5 +10,6 @@ data class UserEntity(
     val id: Int? = null,
     var didLogin: Boolean = false,
     var user: String = "",
-    var token: String = ""
+    var password: String = "",
+    var idFirestore: String = ""
 ) : Serializable

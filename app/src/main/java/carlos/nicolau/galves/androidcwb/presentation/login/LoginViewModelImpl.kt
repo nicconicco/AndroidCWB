@@ -35,7 +35,7 @@ class LoginViewModelImpl(
 
         _viewState.value = LoginViewModel.ViewState.isLoading(true)
 
-        if(internetUtils.isNetworkAvailable()) {
+        if (internetUtils.isNetworkAvailable()) {
             uiScope.launch {
                 getUser(username, password)
             }
@@ -51,17 +51,17 @@ class LoginViewModelImpl(
                 username,
                 password,
                 object : Callback<User, ErrorType>() {
-                override fun onSuccess(result: User) {
-                    _viewState.value = LoginViewModel.ViewState.isLoading(false)
-                    _viewState.value = LoginViewModel.ViewState.goToHome
-                }
+                    override fun onSuccess(result: User) {
+                        _viewState.value = LoginViewModel.ViewState.isLoading(false)
+                        _viewState.value = LoginViewModel.ViewState.goToHome
+                    }
 
-                override fun onError(error: ErrorType) {
-                    super.onError(error)
-                    _viewState.value = LoginViewModel.ViewState.isLoading(false)
-                    _viewState.value = LoginViewModel.ViewState.errorLogin(error)
-                }
-            })
+                    override fun onError(error: ErrorType) {
+                        super.onError(error)
+                        _viewState.value = LoginViewModel.ViewState.isLoading(false)
+                        _viewState.value = LoginViewModel.ViewState.errorLogin(error)
+                    }
+                })
         }.await()
     }
 }

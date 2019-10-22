@@ -33,7 +33,7 @@ class UserDAORoomTest {
     @Test
     fun whenInsertUser_checkIfDbHaveOneUser() {
         androidCWBRoom.getUserDAO().insert(
-            UserEntity(didLogin = true, user = "AndroidCWB", token = "meutokenfalso")
+            UserEntity(didLogin = true, user = "AndroidCWB", idFirestore = "meutokenfalso")
         )
 
         Assert.assertNotNull(

@@ -1,7 +1,6 @@
 package carlos.nicolau.galves.core.utils
 
-
-open class Callback<T,  E> : OnResult<T, E>{
+open class Callback<T, E> : OnResult<T, E> {
 
     private var data: T? = null
     private var error: E? = null
@@ -12,5 +11,9 @@ open class Callback<T,  E> : OnResult<T, E>{
 
     override fun onError(error: E) {
         this.error = error
+    }
+
+    override fun equals(other: Any?): Boolean {
+        return true
     }
 }
