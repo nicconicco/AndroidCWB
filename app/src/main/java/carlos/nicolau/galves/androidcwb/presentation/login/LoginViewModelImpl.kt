@@ -3,6 +3,7 @@ package carlos.nicolau.galves.androidcwb.presentation.login
 import android.app.Application
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.viewModelScope
 import carlos.nicolau.galves.androidcwb.framework.di.AndroidCWBMvvm
 import carlos.nicolau.galves.androidcwb.framework.room.AndroidCWBRoom
 import carlos.nicolau.galves.androidcwb.framework.util.InternetUtils
@@ -51,9 +52,12 @@ class LoginViewModelImpl(
                 username,
                 password,
                 object : Callback<User, ErrorType>() {
-                    override fun onSuccess(result: User) {
+                    override fun onSuccess(user: User) {
+                        saveInRoom(user)
+
                         _viewState.value = LoginViewModel.ViewState.isLoading(false)
                         _viewState.value = LoginViewModel.ViewState.goToHome
+
                     }
 
                     override fun onError(error: ErrorType) {
@@ -62,6 +66,19 @@ class LoginViewModelImpl(
                         _viewState.value = LoginViewModel.ViewState.errorLogin(error)
                     }
                 })
+        }.await()
+    }
+
+    private fun saveInRoom(user: User) {
+        uiScope.launch {
+            saveInDB(user)
+        }
+    }
+
+    private suspend fun saveInDB(user: User) {
+        ioScope.async {
+            return@async interactors.saveInDB(user
+               )
         }.await()
     }
 }

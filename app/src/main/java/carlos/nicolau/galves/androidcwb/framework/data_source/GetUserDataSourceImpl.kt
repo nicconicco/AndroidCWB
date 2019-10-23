@@ -1,5 +1,6 @@
 package carlos.nicolau.galves.androidcwb.framework.data_source
 
+import android.util.Log
 import carlos.nicolau.galves.androidcwb.framework.firebase.FirebaseFirestoreUtils
 import carlos.nicolau.galves.androidcwb.framework.room.AndroidCWBRoom
 import carlos.nicolau.galves.androidcwb.framework.room.UserEntityMapper
@@ -7,22 +8,37 @@ import carlos.nicolau.galves.core.utils.Callback
 import carlos.nicolau.galves.core.data.GetUserDataSource
 import carlos.nicolau.galves.core.domain.User
 import carlos.nicolau.galves.core.errors.ErrorType
-import java.lang.Exception
 
 class GetUserDataSourceImpl(
     private val db: AndroidCWBRoom,
     private val firebaseFirestoreUtils: FirebaseFirestoreUtils
 ) : GetUserDataSource {
+    override fun saveInDB(user: User) {
+        val userEntity = UserEntityMapper().reverseFrom(user)
+
+        val id = db.getUserDAO().insert(
+            userEntity
+        )
+
+        if (id > 0) {
+            Log.d(TAG, "user with id = $id was saved succeful")
+        } else {
+            Log.d(TAG, "user with id = $id was not saved")
+        }
+    }
+
     override fun execute(
         username: String,
         password: String,
         callback: Callback<User, ErrorType>
     ) {
+
         firebaseFirestoreUtils.getUser(username, password, object : Callback<User, ErrorType>() {
             override fun onSuccess(result: User) {
-                result.id.apply {
-                    saveUser(result, callback)
-                }
+                callback.onSuccess(result)
+//                result.id.apply {
+//                    saveUser(result, callback)
+//                }
             }
 
             override fun onError(error: ErrorType) {
@@ -34,13 +50,16 @@ class GetUserDataSourceImpl(
 
 
     override fun saveUser(user: User, callback: Callback<User, ErrorType>) {
-        try {
-            db.getUserDAO().insert(
-                UserEntityMapper().reverseFrom(user)
-            )
 
+        val userEntity = UserEntityMapper().reverseFrom(user)
+
+        val id = db.getUserDAO().insert(
+            userEntity
+        )
+
+        if (id > 0) {
             callback.onSuccess(user)
-        } catch (e: Exception) {
+        } else {
             callback.onError(ErrorType.ERRO_USER_NOT_ADDED_ROOM)
         }
     }

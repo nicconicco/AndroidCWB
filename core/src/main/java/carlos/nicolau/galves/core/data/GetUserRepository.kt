@@ -6,4 +6,5 @@ import carlos.nicolau.galves.core.utils.Callback
 
 interface GetUserRepository {
     fun execute(username: String, password: String, callback: Callback<User, ErrorType>)
+    fun saveInDB(user: User)
 }

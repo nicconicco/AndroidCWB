@@ -6,7 +6,7 @@ import androidx.room.*
 interface UserDAO {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insert(user: UserEntity)
+    fun insert(user: UserEntity):Long
 
     @Query("DELETE FROM user")
     fun deleteAll()

@@ -10,4 +10,8 @@ interface GetUserUseCase {
         password: String,
         callback: Callback<User, ErrorType>
     )
+
+    fun saveInDB(
+        user: User
+    )
 }
