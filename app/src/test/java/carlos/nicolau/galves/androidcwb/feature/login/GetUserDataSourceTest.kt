@@ -20,9 +20,6 @@ class GetUserDataSourceTest {
 
     @Test
     fun `when getUserDataSource saved method called then dbRoom call`() {
-        //Given
-        val callback = Callback<User, ErrorType>()
-
         //When
         `when`(dbRoom.getUserDAO()).thenReturn(userDAO)
 
@@ -30,7 +27,7 @@ class GetUserDataSourceTest {
             dbRoom, firebaseFirestoreUtils
         )
 
-        getUserDataSource.saveUser(User(), callback)
+        getUserDataSource.saveInDB(User())
 
         //Then
         verify(dbRoom, atLeast(1)).getUserDAO()

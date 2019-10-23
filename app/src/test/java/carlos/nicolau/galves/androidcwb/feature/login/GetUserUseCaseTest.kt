@@ -24,4 +24,17 @@ class GetUserUseCaseTest {
         Mockito.verify(getUserRepositoryImpl).execute("","", callback)
         Mockito.verifyNoMoreInteractions(getUserRepositoryImpl)
     }
+
+    @Test
+    fun `when getUseCase call saveInDB should call repository and saveUser`() {
+
+        val user = User()
+        val getUserUseCase = GetUserUseCaseImpl(getUserRepositoryImpl)
+
+        getUserUseCase.saveInDB(user)
+
+        Mockito.verify(getUserRepositoryImpl, Mockito.atLeast(1)).saveInDB(user)
+        Mockito.verify(getUserRepositoryImpl).saveInDB(user)
+        Mockito.verifyNoMoreInteractions(getUserRepositoryImpl)
+    }
 }

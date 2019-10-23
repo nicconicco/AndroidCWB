@@ -10,6 +10,5 @@ interface GetUserDataSource : LifecycleObserver {
         get() = GetUserDataSource::class.java.simpleName
 
     fun execute(username: String, password: String, callback: Callback<User, ErrorType>)
-    fun saveUser(user: User, callback: Callback<User, ErrorType>)
     fun saveInDB(user: User)
 }
