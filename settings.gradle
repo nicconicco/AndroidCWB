@@ -1,2 +1,2 @@
-include ':app', ':core', ':utils-mvp'
+include ':app', ':core', ':utils-mvp', ':home'
 rootProject.name='AndroidCWB'
