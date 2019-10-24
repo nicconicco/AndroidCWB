@@ -1,19 +1,19 @@
 package carlos.nicolau.galves.androidcwb.presentation.login
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import carlos.nicolau.galves.androidcwb.R
-import carlos.nicolau.galves.androidcwb.presentation.home.HomeActivity
+import carlos.nicolau.galves.androidcwb.framework.base.BaseActivity
+import carlos.nicolau.galves.androidcwb.framework.module_android.ModuleName
+import carlos.nicolau.galves.core.domain.User
 import carlos.nicolau.galves.core.errors.ErrorType
+import carlos.nicolau.galves.core.utils.Callback
 import kotlinx.android.synthetic.main.activity_login.*
-import org.koin.android.ext.android.inject
 import org.koin.android.viewmodel.ext.android.viewModel
 
-class LoginActivity : AppCompatActivity() {
+class LoginActivity : BaseActivity() {
 
     //region actions
     fun errorLogin(error: String) {
@@ -21,8 +21,23 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun goToHome() {
-        startActivity(Intent(this, HomeActivity::class.java))
-        finish()
+
+        installRegistrationModule(
+            ModuleName.LIST_HOME,
+            object : Callback<Boolean, String>() {
+                override fun onSuccess(result: Boolean) {
+                    super.onSuccess(result)
+                    openModule(ModuleName.LIST_HOME)
+                    finish()
+                }
+
+                override fun onError(error: String) {
+                    super.onError(error)
+                    errorLogin(error)
+                }
+            }
+        )
+
     }
 
     fun showLoading() {
