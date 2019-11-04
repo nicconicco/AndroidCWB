@@ -12,7 +12,6 @@ import com.google.android.play.core.splitinstall.SplitInstallManagerFactory
 import com.google.android.play.core.splitinstall.SplitInstallRequest
 
 open class BaseActivity : AppCompatActivity() {
-
     //region Module Controll do not delete this section
     private val splitInstallManager: SplitInstallManager by lazy {
         SplitInstallManagerFactory.create(applicationContext)

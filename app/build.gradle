@@ -41,6 +41,7 @@ android {
     testOptions {
         unitTests.returnDefaultValues = true
     }
+
     compileOptions {
         sourceCompatibility = 1.8
         targetCompatibility = 1.8
@@ -53,9 +54,12 @@ android {
     kapt {
         generateStubs = true
     }
+
+    dataBinding {
+        enabled = true
+    }
+
     dynamicFeatures = [":list_home"]
-
-
 }
 
 dependencies {

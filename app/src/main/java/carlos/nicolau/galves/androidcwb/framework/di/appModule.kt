@@ -85,6 +85,3 @@ internal val appModule = module(override = true) {
     //endregion
 }
 
-private val loadModules by lazy { loadKoinModules(appModule) }
-
-internal fun injectInvoiceModulesDependencies() = loadModules
