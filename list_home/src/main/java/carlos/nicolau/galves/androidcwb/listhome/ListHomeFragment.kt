@@ -23,6 +23,9 @@ class ListHomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         return ListHomeFragmentBinding.inflate(inflater, container, false).apply {
+            lifecycleOwner = viewLifecycleOwner
+            bindingViewModel = viewModel
+//            recyclerHome.adapter
         }.root
     }
 
