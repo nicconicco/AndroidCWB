@@ -6,4 +6,5 @@
     <string name="action_sign_in">Sign in</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_home">Home</string>
+    <string name="title_list_home">ListHome</string>
 </resources>
