@@ -7,7 +7,6 @@ import androidx.lifecycle.Observer
 import carlos.nicolau.galves.androidcwb.R
 import carlos.nicolau.galves.androidcwb.framework.base.BaseActivity
 import carlos.nicolau.galves.androidcwb.framework.module_android.ModuleName
-import carlos.nicolau.galves.core.domain.User
 import carlos.nicolau.galves.core.errors.ErrorType
 import carlos.nicolau.galves.core.utils.Callback
 import kotlinx.android.synthetic.main.activity_login.*
@@ -23,11 +22,11 @@ class LoginActivity : BaseActivity() {
     fun goToHome() {
 
         installRegistrationModule(
-            ModuleName.LIST_HOME,
+            ModuleName.HOME,
             object : Callback<Boolean, String>() {
                 override fun onSuccess(result: Boolean) {
                     super.onSuccess(result)
-                    openModule(ModuleName.LIST_HOME)
+                    openModule(ModuleName.HOME)
                     finish()
                 }
 

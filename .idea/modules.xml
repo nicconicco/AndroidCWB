@@ -3,10 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidCWB.iml" filepath="$PROJECT_DIR$/AndroidCWB.iml" />
-      <module fileurl="file://$PROJECT_DIR$/list_home/AndroidCWB-list_home.iml" filepath="$PROJECT_DIR$/list_home/AndroidCWB-list_home.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
-      <module fileurl="file://$PROJECT_DIR$/list_home/list_home.iml" filepath="$PROJECT_DIR$/list_home/list_home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/home/home.iml" filepath="$PROJECT_DIR$/home/home.iml" />
       <module fileurl="file://$PROJECT_DIR$/utils-mvp/utils-mvp.iml" filepath="$PROJECT_DIR$/utils-mvp/utils-mvp.iml" />
     </modules>
   </component>

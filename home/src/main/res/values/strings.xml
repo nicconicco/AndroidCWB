@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="image_of_android_icon">Image of Android Icon</string>
+    <string name="title_home">Home</string>
+    <string name="api_level">Api level</string>
+</resources>

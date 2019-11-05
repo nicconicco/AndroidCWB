@@ -52,7 +52,7 @@ open class BaseActivity : AppCompatActivity() {
 
     private fun checkModule(moduleName: ModuleName): String {
         return when (moduleName) {
-            ModuleName.LIST_HOME -> ModuleName.LIST_HOME_DIR.value
+            ModuleName.HOME -> ModuleName.HOME_DIR.value
             else -> {
                 ModuleName.NOT_FOUND.value
             }
