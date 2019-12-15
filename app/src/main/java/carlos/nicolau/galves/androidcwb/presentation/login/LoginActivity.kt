@@ -58,10 +58,10 @@ class LoginActivity : BaseActivity() {
 
     private fun setupView() {
         login.setOnClickListener {
-            loginViewModel.viewState.observe(this, Observer {
-                when (it) {
+            loginViewModel.viewState.observe(this, Observer { result ->
+                when (result) {
                     is LoginViewModel.ViewState.isLoading -> {
-                        when (it.load) {
+                        when (result.load) {
                             true -> {
                                 showLoading()
                             }
@@ -77,16 +77,16 @@ class LoginActivity : BaseActivity() {
 
                     is LoginViewModel.ViewState.errorLogin -> {
                         when {
-                            it.erroType == ErrorType.ERRO_404 ->
+                            result.erroType == ErrorType.ERRO_404 ->
                                 errorLogin(ErrorType.ERRO_404.value)
 
-                            it.erroType == ErrorType.ERRO_265 ->
+                            result.erroType == ErrorType.ERRO_265 ->
                                 errorLogin(ErrorType.ERRO_265.value)
 
-                            it.erroType == ErrorType.ERRO_INTERNET ->
+                            result.erroType == ErrorType.ERRO_INTERNET ->
                                 errorLogin(ErrorType.ERRO_INTERNET.value)
 
-                            it.erroType == ErrorType.ERRO_USER_NOT_FOUND ->
+                            result.erroType == ErrorType.ERRO_USER_NOT_FOUND ->
                                 errorLogin(ErrorType.ERRO_USER_NOT_FOUND.value)
                         }
                     }

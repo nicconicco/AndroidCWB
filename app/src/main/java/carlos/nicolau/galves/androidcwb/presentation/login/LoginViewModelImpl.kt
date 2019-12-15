@@ -13,6 +13,9 @@ import carlos.nicolau.galves.core.errors.ErrorType
 import carlos.nicolau.galves.core.interators.GetUserUseCase
 import carlos.nicolau.galves.core.utils.Callback
 import kotlinx.coroutines.*
+import carlos.nicolau.galves.androidcwb.framework.util.SingleLiveEvent
+
+
 
 class LoginViewModelImpl(
     application: Application,
@@ -26,8 +29,8 @@ class LoginViewModelImpl(
         application, db, interactors, mainDispacher, ioDispacher, internetUtils
     ), LoginViewModel.actions {
 
-    private val _viewState by lazy { MutableLiveData<LoginViewModel.ViewState>() }
-    val viewState: LiveData<LoginViewModel.ViewState> get() = _viewState
+    private val _viewState by lazy { SingleLiveEvent<LoginViewModel.ViewState>() }
+    val viewState: SingleLiveEvent<LoginViewModel.ViewState> get() = _viewState
 
     private val uiScope = CoroutineScope(mainDispacher + job)
     private val ioScope = CoroutineScope(ioDispacher + job)
