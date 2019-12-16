@@ -43,7 +43,7 @@ object DummyAndroid {
                         "Other applications include: Alarm Clock, Calculator, Dialer (Phone), Home screen (Launcher), Pictures (Gallery), and Settings.\n" +
                         "Wi-Fi and Bluetooth support.",
                 subDescription = "Android Project Open Source",
-                icon = "ic_android_standart.webp"
+                icon = "alpha_v2"
             )
             2 -> Android(
                 name = "Android 1.1",
@@ -56,7 +56,7 @@ object DummyAndroid {
                         "Ability to save attachments in messages.\n" +
                         "Support added for marquee in system layouts.",
                 subDescription = "Android Project Open Source",
-                icon = "ic_android_standart.webp"
+                icon = "alpha_v2"
             )
             3 -> Android(
                 name = "Android 1.5 Cupcake",
@@ -77,7 +77,7 @@ object DummyAndroid {
                         "Ability to upload videos to YouTube.\n" +
                         "Ability to upload photos to Picasa.",
                 subDescription = "Android Project Open Source",
-                icon = "ic_android_standart.webp"
+                icon = "cupcake_v2"
             )
             4 -> Android(
                 name = "Android 1.6 Donut",
@@ -96,7 +96,7 @@ object DummyAndroid {
                         "Speed improvements in searching and camera applications.\n" +
                         "Expanded Gesture framework and a new GestureBuilder development tool.",
                 subDescription = "Android Project Open Source",
-                icon = "ic_android_standart.webp"
+                icon = "donut_v2"
             )
             5 -> Android(
                 name = "Android 2.0 Eclair",
@@ -119,7 +119,7 @@ object DummyAndroid {
                         "MotionEvent class enhanced to track multi-touch events.[52]\n" +
                         "Addition of live wallpapers, allowing the animation of home-screen background images to show movement.",
                 subDescription = "Android Project Open Source",
-                icon = "ic_android_standart.webp"
+                icon = "eclair_v2"
             )
             6 -> Android(
                 name = "Android 2.0.1 Eclair",
@@ -129,7 +129,7 @@ object DummyAndroid {
                 date = "December 3, 2009",
                 description = "Minor API changes, bug fixes and framework behavioral changes.",
                 subDescription = "Android Project Open Source",
-                icon = "ic_android_standart.webp"
+                icon = "eclair_v2"
             )
             7 -> Android(
                 name = "Android 2.1 Eclair",
@@ -139,7 +139,7 @@ object DummyAndroid {
                 date = "January 12, 2010",
                 description = "Minor amendments to the API and bug fixes.",
                 subDescription = "Android Project Open Source",
-                icon = "ic_android_standart.webp"
+                icon = "eclair_v2"
             )
             8 -> Android(
                 name = "Android 2.2 Froyo",
@@ -169,7 +169,7 @@ object DummyAndroid {
                         "2.2.2 - Minor bug fixes, including SMS routing issues that affected the Nexus One.\n" +
                         "2.2.3 - Two security updates.",
                 subDescription = "Android Project Open Source",
-                icon = "ic_android_standart.webp"
+                icon = "froyo_v2"
             )
             9 -> Android(
                 name = "Android 2.3 Gingerbread",
@@ -197,7 +197,7 @@ object DummyAndroid {
                         "2.3.1 - Improvements and bug fixes for the Nexus S.\n" +
                         "2.3.2 - Improvements and bug fixes for the Nexus S.",
                 subDescription = "Android Project Open Source",
-                icon = "ic_android_standart.webp"
+                icon = "gingerbread_v2"
             )
             10 -> Android(
                 name = "Android 2.3.3 Gingerbread",
@@ -236,7 +236,7 @@ object DummyAndroid {
                         "Native support for more sensors (such as gyroscopes and barometers).\n" +
                         "First Android version to feature an Easter egg. It was an image of the Bugdroid standing next to a zombie gingerbread man, with many more zombies in the background.",
                 subDescription = "Android Project Open Source",
-                icon = "ic_android_standart.webp"
+                icon = "gingerbread_v2"
             )
             else -> Android(
 
