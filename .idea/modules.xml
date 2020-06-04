@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroidCWB.iml" filepath="$PROJECT_DIR$/AndroidCWB.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AndroidCWB.iml" filepath="$PROJECT_DIR$/AndroidCWB.iml" group="AndroidCWB" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="AndroidCWB/app" />
       <module fileurl="file://$PROJECT_DIR$/assets/assets.iml" filepath="$PROJECT_DIR$/assets/assets.iml" />
-      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
-      <module fileurl="file://$PROJECT_DIR$/home/home.iml" filepath="$PROJECT_DIR$/home/home.iml" />
-      <module fileurl="file://$PROJECT_DIR$/utils-mvp/utils-mvp.iml" filepath="$PROJECT_DIR$/utils-mvp/utils-mvp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" group="AndroidCWB/core" />
+      <module fileurl="file://$PROJECT_DIR$/home/home.iml" filepath="$PROJECT_DIR$/home/home.iml" group="AndroidCWB/home" />
+      <module fileurl="file://$PROJECT_DIR$/utils-mvp/utils-mvp.iml" filepath="$PROJECT_DIR$/utils-mvp/utils-mvp.iml" group="AndroidCWB/utils-mvp" />
     </modules>
   </component>
 </project>

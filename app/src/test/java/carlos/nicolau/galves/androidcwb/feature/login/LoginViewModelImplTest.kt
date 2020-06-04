@@ -95,6 +95,7 @@ class LoginViewModelImplTest {
             assertThat(login.viewState.value, IsInstanceOf(expectedStateSuccess))
             verify(observer).onChanged(LoginViewModel.ViewState.isLoading(true))
             verify(observer).onChanged(LoginViewModel.ViewState.goToHome)
+            verify(observer).onChanged(LoginViewModel.ViewState.isLoading(false))
         }
 
     @Test
