@@ -1,17 +1,8 @@
-package carlos.nicolau.galves.core.interators
+package carlos.nicolau.galves.core.interactors
 
 import carlos.nicolau.galves.core.domain.User
-import carlos.nicolau.galves.core.errors.ErrorType
-import carlos.nicolau.galves.core.utils.Callback
+import carlos.nicolau.galves.core.interators.IGetUserUseCase
 
-interface GetUserUseCase {
-    fun execute(
-        username: String,
-        password: String,
-        callback: Callback<User, ErrorType>
-    )
-
-    fun saveInDB(
-        user: User
-    )
+class GetUserUseCase(): IGetUserUseCase {
+    override fun execute(username: String, password: String) = User(true)
 }
