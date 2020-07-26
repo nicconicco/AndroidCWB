@@ -1,12 +1,15 @@
 package carlos.nicolau.galves.androidcwb.framework
 
 import android.app.Application
-import carlos.nicolau.galves.androidcwb.framework.data_source.GetUserDataSource
-import carlos.nicolau.galves.androidcwb.framework.di_native.AndroidCWBMvpFactory
+import carlos.nicolau.galves.androidcwb.framework.datasource.GetUserDataSource
+import carlos.nicolau.galves.androidcwb.framework.di_native.AndroidCWBMvpServiceLocator
 import carlos.nicolau.galves.androidcwb.framework.provider.AppDispatcherProvider
 import carlos.nicolau.galves.androidcwb.framework.provider.Interactors
+import carlos.nicolau.galves.androidcwb.framework.repository.IRepository
+import carlos.nicolau.galves.androidcwb.framework.repository.RepositoryImpl
 import carlos.nicolau.galves.androidcwb.framework.room.AndroidCWBRoom
 import carlos.nicolau.galves.androidcwb.framework.room.AndroidCWBRoom.Companion.getDatabase
+import carlos.nicolau.galves.androidcwb.framework.room.UserEntityMapper
 import carlos.nicolau.galves.core.data.GetUserRepositoryImpl
 import carlos.nicolau.galves.core.interators.GetUserUseCaseImpl
 
@@ -28,9 +31,7 @@ class AndroidCWBApplication : Application() {
     }
 
     private fun injectDependencies() {
-
-        AndroidCWBMvpFactory.inject(
-            getDb(),
+        AndroidCWBMvpServiceLocator.inject(
             AppDispatcherProvider().io(),
             AppDispatcherProvider().ui(),
             Interactors(
@@ -43,9 +44,20 @@ class AndroidCWBApplication : Application() {
         return GetUserUseCaseImpl(
             GetUserRepositoryImpl(
                 GetUserDataSource(
-                    getDb()
+                    getRepository(
+                        getDb()
+                    ),
+                    getMapper()
                 )
             )
         )
+    }
+
+    private fun getMapper(): UserEntityMapper {
+        return UserEntityMapper()
+    }
+
+    private fun getRepository(db: AndroidCWBRoom) : IRepository {
+        return RepositoryImpl(db)
     }
 }

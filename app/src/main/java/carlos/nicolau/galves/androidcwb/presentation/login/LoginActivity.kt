@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import carlos.nicolau.galves.androidcwb.R
-import carlos.nicolau.galves.androidcwb.framework.di_native.AndroidCWBMvpFactory
+import carlos.nicolau.galves.androidcwb.framework.di_native.AndroidCWBMvpServiceLocator
 import carlos.nicolau.galves.androidcwb.presentation.home.HomeActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -43,9 +43,9 @@ class LoginActivity : AppCompatActivity(), ILoginPresenter.View {
     private fun setupView() {
 
         loginPresenterImpl = LoginPresenterImpl(
-            AndroidCWBMvpFactory.dependencies.getUser,
-            AndroidCWBMvpFactory.ui,
-            AndroidCWBMvpFactory.io
+            AndroidCWBMvpServiceLocator.dependencies.getUser,
+            AndroidCWBMvpServiceLocator.ui,
+            AndroidCWBMvpServiceLocator.io
         )
 
         loginPresenterImpl.attach(this)
