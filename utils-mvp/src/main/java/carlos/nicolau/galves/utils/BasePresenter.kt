@@ -2,12 +2,8 @@ package carlos.nicolau.galves.utils
 
 import androidx.lifecycle.OnLifecycleEvent
 import androidx.lifecycle.Lifecycle
-import kotlinx.coroutines.SupervisorJob
 
-abstract class BasePresenter<V : Contract.View> : Contract.Presenter<V> {
-
-    val job = SupervisorJob()
-
+abstract class BasePresenter <V: Contract.View>: Contract.Presenter<V> {
     protected var mView: V? = null
 
     override fun attach(view: V) {
@@ -17,10 +13,6 @@ abstract class BasePresenter<V : Contract.View> : Contract.Presenter<V> {
 
     @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
     override fun detach() {
-
-        if (job.isActive)
-            job.cancel()
-
         this.mView = null
     }
 }
