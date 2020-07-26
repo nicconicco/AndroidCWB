@@ -11,36 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0f236ca-7efa-406f-8459-119551677eb3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/repository/IRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/repository/RepositoryImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AndroidCWB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidCWB.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/AndroidCWBApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/AndroidCWBApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/data_source/GetUserDataSource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/datasource/GetUserDataSource.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/AndroidCWBMvpFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/AndroidCWBMvpServiceLocator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/room/UserEntityMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/room/UserEntityMapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserDataSourceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserDataSourceTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/core/core.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils-mvp/utils-mvp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/utils-mvp/utils-mvp.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +98,7 @@
       <recent name="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di/modules" />
     </key>
   </component>
-  <component name="RunManager" selected="Android JUnit.GetUserDataSourceTest.whenGetUserDataSourceCall_shoulCallDbRoom">
+  <component name="RunManager" selected="Android JUnit.login in app">
     <configuration name="GetUserDataSourceTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
@@ -333,9 +305,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Android JUnit.login in app" />
         <item itemvalue="Android JUnit.GetUserDataSourceTest.whenGetUserDataSourceCall_shoulCallDbRoom" />
         <item itemvalue="Android JUnit.GetUserDataSourceTest" />
-        <item itemvalue="Android JUnit.login in app" />
         <item itemvalue="Android Instrumented Tests.UserDAORoomTest" />
         <item itemvalue="Android Instrumented Tests.whendeleteAlltUser...()" />
       </list>
@@ -368,38 +340,38 @@
       <screen x="0" y="23" width="1280" height="729" />
     </state>
     <state x="419" y="110" key="#com.intellij.ide.util.MemberChooser/0.23.1280.729@0.23.1280.729" timestamp="1595797738260" />
-    <state width="1238" height="226" key="GridCell.Tab.0.bottom" timestamp="1595796611998">
+    <state width="1238" height="181" key="GridCell.Tab.0.bottom" timestamp="1595798402913">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1238" height="226" key="GridCell.Tab.0.bottom/0.23.1280.729@0.23.1280.729" timestamp="1595796611998" />
-    <state width="1238" height="226" key="GridCell.Tab.0.center" timestamp="1595796611998">
+    <state width="1238" height="181" key="GridCell.Tab.0.bottom/0.23.1280.729@0.23.1280.729" timestamp="1595798402913" />
+    <state width="1238" height="181" key="GridCell.Tab.0.center" timestamp="1595798402912">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1238" height="226" key="GridCell.Tab.0.center/0.23.1280.729@0.23.1280.729" timestamp="1595796611998" />
-    <state width="1238" height="226" key="GridCell.Tab.0.left" timestamp="1595796611997">
+    <state width="1238" height="181" key="GridCell.Tab.0.center/0.23.1280.729@0.23.1280.729" timestamp="1595798402912" />
+    <state width="1238" height="181" key="GridCell.Tab.0.left" timestamp="1595798402911">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1238" height="226" key="GridCell.Tab.0.left/0.23.1280.729@0.23.1280.729" timestamp="1595796611997" />
-    <state width="1238" height="226" key="GridCell.Tab.0.right" timestamp="1595796611998">
+    <state width="1238" height="181" key="GridCell.Tab.0.left/0.23.1280.729@0.23.1280.729" timestamp="1595798402911" />
+    <state width="1238" height="181" key="GridCell.Tab.0.right" timestamp="1595798402912">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1238" height="226" key="GridCell.Tab.0.right/0.23.1280.729@0.23.1280.729" timestamp="1595796611998" />
-    <state width="1238" height="226" key="GridCell.Tab.1.bottom" timestamp="1595796611999">
+    <state width="1238" height="181" key="GridCell.Tab.0.right/0.23.1280.729@0.23.1280.729" timestamp="1595798402912" />
+    <state width="1238" height="226" key="GridCell.Tab.1.bottom" timestamp="1595798313864">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1238" height="226" key="GridCell.Tab.1.bottom/0.23.1280.729@0.23.1280.729" timestamp="1595796611999" />
-    <state width="1238" height="226" key="GridCell.Tab.1.center" timestamp="1595796611999">
+    <state width="1238" height="226" key="GridCell.Tab.1.bottom/0.23.1280.729@0.23.1280.729" timestamp="1595798313864" />
+    <state width="1238" height="226" key="GridCell.Tab.1.center" timestamp="1595798313864">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1238" height="226" key="GridCell.Tab.1.center/0.23.1280.729@0.23.1280.729" timestamp="1595796611999" />
-    <state width="1238" height="226" key="GridCell.Tab.1.left" timestamp="1595796611998">
+    <state width="1238" height="226" key="GridCell.Tab.1.center/0.23.1280.729@0.23.1280.729" timestamp="1595798313864" />
+    <state width="1238" height="226" key="GridCell.Tab.1.left" timestamp="1595798313863">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1238" height="226" key="GridCell.Tab.1.left/0.23.1280.729@0.23.1280.729" timestamp="1595796611998" />
-    <state width="1238" height="226" key="GridCell.Tab.1.right" timestamp="1595796611999">
+    <state width="1238" height="226" key="GridCell.Tab.1.left/0.23.1280.729@0.23.1280.729" timestamp="1595798313863" />
+    <state width="1238" height="226" key="GridCell.Tab.1.right" timestamp="1595798313864">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
-    <state width="1238" height="226" key="GridCell.Tab.1.right/0.23.1280.729@0.23.1280.729" timestamp="1595796611999" />
+    <state width="1238" height="226" key="GridCell.Tab.1.right/0.23.1280.729@0.23.1280.729" timestamp="1595798313864" />
     <state x="365" y="24" key="refactoring.ChangeSignatureDialog" timestamp="1595797862079">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
@@ -442,11 +414,6 @@
           <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/di_native/AndroidCWBMvpServiceLocator.kt</url>
           <line>21</line>
           <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserDataSourceTest.kt</url>
-          <line>39</line>
-          <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/AndroidCWBApplication.kt</url>
@@ -569,34 +536,9 @@
           <option name="timeStamp" value="91" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserDataSourceTest.kt</url>
-          <line>34</line>
-          <option name="timeStamp" value="92" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserDataSourceTest.kt</url>
-          <line>35</line>
-          <option name="timeStamp" value="93" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserDataSourceTest.kt</url>
-          <line>41</line>
-          <option name="timeStamp" value="94" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserDataSourceTest.kt</url>
-          <line>28</line>
-          <option name="timeStamp" value="95" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserDataSourceTest.kt</url>
-          <line>33</line>
-          <option name="timeStamp" value="97" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/login/GetUserDataSourceTest.kt</url>
-          <line>31</line>
-          <option name="timeStamp" value="99" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/framework/room/UserEntityMapper.kt</url>
+          <line>8</line>
+          <option name="timeStamp" value="101" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

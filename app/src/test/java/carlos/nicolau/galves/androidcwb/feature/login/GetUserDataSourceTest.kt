@@ -19,7 +19,6 @@ class GetUserDataSourceTest {
     private val mapper: UserEntityMapper = mock()
     private val userResult: User = mock()
     private val entity: UserEntity = mock()
-    private val dbRoom: AndroidCWBRoom = Mockito.mock(AndroidCWBRoom::class.java)
     private val userEntityMapper = Mockito.mock(UserEntityMapper::class.java)
 
     @Test
