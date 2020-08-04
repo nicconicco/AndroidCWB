@@ -22,6 +22,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginPresenterImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/carlos/nicolau/galves/androidcwb/presentation/login/LoginPresenterImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/LoginPresenterImplTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/carlos/nicolau/galves/androidcwb/feature/LoginPresenterImplTest.kt" afterDir="false" />
+=======
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
@@ -63,6 +68,7 @@
       <change beforePath="$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/interators/GetUserUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/carlos/nicolau/galves/core/interators/GetUserUseCase.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/utils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils.iml" afterDir="false" />
+>>>>>>> upstream/parte_1
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +179,11 @@
       <recent name="D:\projetos_nico\androidcwb\AndroidCWB\app\src\main\java\carlos\nicolau\galves\androidcwb\framework\util" />
     </key>
   </component>
+<<<<<<< HEAD
+  <component name="RunManager" selected="Android JUnit.LoginPresenterImplTest">
+=======
   <component name="RunManager" selected="Android JUnit.LoginPresenterImplTest.whenClickButtonLogin_shouldReturnUserDidLogin_Success">
+>>>>>>> upstream/parte_1
     <configuration name="LoginPresenterImplTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
@@ -405,6 +415,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Android JUnit.LoginPresenterImplTest" />
         <item itemvalue="Android JUnit.LoginPresenterImplTest.whenClickButtonLogin_shouldReturnUserDidLogin_Success" />
         <item itemvalue="Android JUnit.LoginPresenterImplTest" />
         <item itemvalue="Android App.LoginActivity" />
@@ -450,6 +461,30 @@
     <option name="LAST_COMMIT_MESSAGE" value="WIP - doing adapter on databinding with recyclerview.. in progress" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
+    <state width="1398" height="214" key="GridCell.Tab.0.bottom" timestamp="1595806660633">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="1860" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590719199581" />
+    <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1595806660633" />
+    <state width="1398" height="214" key="GridCell.Tab.0.center" timestamp="1595806660633">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="1860" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590719199581" />
+    <state width="1398" height="214" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1595806660633" />
+    <state width="1398" height="214" key="GridCell.Tab.0.left" timestamp="1595806660632">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="1860" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590719199581" />
+    <state width="1398" height="214" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1595806660632" />
+    <state width="1398" height="214" key="GridCell.Tab.0.right" timestamp="1595806660633">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="1860" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590719199581" />
+    <state width="1398" height="214" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1595806660633" />
+    <state x="390" y="273" key="com.intellij.ide.util.TipDialog" timestamp="1594902263185">
+      <screen x="0" y="23" width="1440" height="837" />
+=======
     <state x="100" y="123" width="1080" height="528" key="DiffContextDialog" timestamp="1595804687729">
       <screen x="0" y="23" width="1280" height="728" />
     </state>
@@ -476,6 +511,7 @@
     <state width="1238" height="181" key="GridCell.Tab.0.right/0.23.1280.728@0.23.1280.728" timestamp="1595804659842" />
     <state x="347" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1595803425469">
       <screen x="0" y="23" width="1280" height="728" />
+>>>>>>> upstream/parte_1
     </state>
     <state x="347" y="240" key="com.intellij.ide.util.TipDialog/0.23.1280.728@0.23.1280.728" timestamp="1595803425469" />
     <state x="390" y="273" key="com.intellij.ide.util.TipDialog/0.23.1440.837@0.23.1440.837" timestamp="1594902263185" />
