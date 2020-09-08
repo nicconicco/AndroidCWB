@@ -123,11 +123,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="9" />
-    <option name="width" value="1300" />
-    <option name="height" value="958" />
-  </component>
   <component name="ProjectId" id="1cYlCuFenn4BmDhkbT1eOOCdhBl" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -149,7 +144,7 @@
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/androidTest/java/carlos/nicolau/galves/androidcwb" />
     <property name="memory.settings.postsync.last.time.stamp" value="1595803731121" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -163,13 +158,14 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\projetos_nico\androidcwb\AndroidCWB\home\src\main\res\drawable" />
-      <recent name="D:\projetos_nico\androidcwb\AndroidCWB\app\src\main\res\drawable" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\projetos_nico\androidcwb\AndroidCWB\assets\src\main\res\drawable" />
       <recent name="D:\projetos_nico\androidcwb\AndroidCWB\app\src\main\java\carlos\nicolau\galves\androidcwb\framework\util" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AndroidProjects\AndroidCWB\app\src\androidTest\java\carlos\nicolau\galves\androidcwb" />
+      <recent name="D:\projetos_nico\androidcwb\AndroidCWB\home\src\main\res\drawable" />
+      <recent name="D:\projetos_nico\androidcwb\AndroidCWB\app\src\main\res\drawable" />
     </key>
   </component>
   <component name="RunManager" selected="Android JUnit.LoginPresenterImplTest">
@@ -402,6 +398,62 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="AndroidCWB" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="AndroidCWB" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Android App.assets" />
+      <item itemvalue="Android App.app" />
+      <item itemvalue="Android App.LoginActivity" />
+      <item itemvalue="Android JUnit.LoginPresenterImplTest" />
+      <item itemvalue="Android JUnit.LoginPresenterImplTest.whenClickButtonLogin_shouldReturnUserDidLogin_Success" />
+      <item itemvalue="Android JUnit.LoginViewModelImplTest.Given LoginViewModel when ClickBtnLogin should Return UserDidLogin and GoToHome Success" />
+      <item itemvalue="Gradle.AndroidCWB:app [mergeDexRelease]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Android JUnit.LoginPresenterImplTest" />
