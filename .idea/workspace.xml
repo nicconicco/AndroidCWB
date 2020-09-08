@@ -321,7 +321,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="HT7AB1A03173" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -421,7 +420,7 @@
       <recent name="D:\projetos_nico\androidcwb\AndroidCWB\app\src\main\java\carlos\nicolau\galves\androidcwb\framework\util" />
     </key>
   </component>
-  <component name="RunManager" selected="Android JUnit.LoginPresenterImplTest.whenClickButtonLogin_shouldReturnUserDidLogin_Success">
+  <component name="RunManager" selected="Android App.app">
     <configuration name="LoginPresenterImplTest.whenClickButtonLogin_shouldReturnUserDidLogin_Success" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
