@@ -69,7 +69,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="192.168.56.102:5555" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -173,7 +172,7 @@
       <recent name="D:\projetos_nico\androidcwb\AndroidCWB\app\src\main\java\carlos\nicolau\galves\androidcwb\framework\util" />
     </key>
   </component>
-  <component name="RunManager" selected="Android JUnit.LoginPresenterImplTest.whenClickButtonLogin_shouldReturnUserDidLogin_Success">
+  <component name="RunManager" selected="Android JUnit.LoginPresenterImplTest">
     <configuration name="LoginPresenterImplTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
@@ -405,8 +404,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Android JUnit.LoginPresenterImplTest.whenClickButtonLogin_shouldReturnUserDidLogin_Success" />
         <item itemvalue="Android JUnit.LoginPresenterImplTest" />
+        <item itemvalue="Android JUnit.LoginPresenterImplTest.whenClickButtonLogin_shouldReturnUserDidLogin_Success" />
         <item itemvalue="Android App.LoginActivity" />
         <item itemvalue="Android JUnit.LoginViewModelImplTest.Given LoginViewModel when ClickBtnLogin should Return UserDidLogin and GoToHome Success" />
         <item itemvalue="Gradle.AndroidCWB:app [mergeDexRelease]" />

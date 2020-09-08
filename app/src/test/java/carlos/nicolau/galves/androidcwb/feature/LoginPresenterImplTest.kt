@@ -3,7 +3,7 @@ package carlos.nicolau.galves.androidcwb.feature
 import carlos.nicolau.galves.androidcwb.presentation.login.LoginPresenter
 import carlos.nicolau.galves.androidcwb.presentation.login.LoginPresenterImpl
 import carlos.nicolau.galves.core.domain.User
-import carlos.nicolau.galves.core.interators.IGetUserUseCase
+import carlos.nicolau.galves.core.interators.GetUserUseCase
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mockito
@@ -11,7 +11,7 @@ import org.mockito.MockitoAnnotations
 
 class LoginPresenterImplTest {
     private val view = Mockito.mock(LoginPresenter.View::class.java)
-    private val getUserUseCase: IGetUserUseCase = Mockito.mock(IGetUserUseCase::class.java)
+    private val getUserUseCase: GetUserUseCase = Mockito.mock(GetUserUseCase::class.java)
     private val presenter = LoginPresenterImpl(getUserUseCase)
 
     @Before
